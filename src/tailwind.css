@@ -219,6 +219,10 @@
   height: 5rem;
 }
 
+.h-\[50svh\] {
+  height: 50svh;
+}
+
 .h-fit {
   height: -moz-fit-content;
   height: fit-content;
@@ -226,14 +230,6 @@
 
 .h-full {
   height: 100%;
-}
-
-.max-h-screen {
-  max-height: 100vh;
-}
-
-.max-h-\[70svh\] {
-  max-height: 70svh;
 }
 
 .w-40 {
@@ -620,6 +616,10 @@ body {
 
   .md\:block {
     display: block;
+  }
+
+  .md\:max-h-\[70svh\] {
+    max-height: 70svh;
   }
 
   .md\:w-1\/2 {

@@ -15,9 +15,24 @@ index: false
 #observablehq-center > main {
     width: 100%;
 }
+
+#observablehq-header > nav > a, #observablehq-footer {
+    margin-left: 1rem;
+}
+
+#observablehq-header > nav > div, #observablehq-footer {
+    margin-right: 1rem;
+}
+
 @media (min-width: 640px) {
     #observablehq-center > main {
         max-width: 640px;
+    }
+    #observablehq-header > nav > a, #observablehq-footer {
+         margin-left: 0;
+    }
+    #observablehq-header > nav > div, #observablehq-footer {
+        margin-right: 0;
     }
 }
 @media (min-width: 768px) {
@@ -47,13 +62,7 @@ index: false
     margin-right: 0px !important;
 }
 
-#observablehq-header > nav > img {
-    margin-left: 0.5rem;
-}
 
-#observablehq-header > nav > div {
-    margin-right: 0.5rem;
-}
 </style>
 
 
@@ -73,7 +82,7 @@ console.log(image)
 display(html`
     <div id="Hero" class="flex flex-col -mt-4 text-center gap-y-4 sm:gap-y-0 gap-x-12 md:flex-row md:text-left">
         <a href="${url}" class="w-full md:order-2 ">
-         <img src="${image}" class="w-full max-h-[70svh] " alt="">
+         <img src="${image}" class="w-full h-[50svh] md:max-h-[70svh] " alt="">
         </a>
         <div class="px-2 my-auto sm:px-0">
             <a href="${url}">
