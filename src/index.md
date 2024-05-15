@@ -63,9 +63,7 @@ import article from "./components/article.js"
 
 
 ```js
-const posts = await FileAttachment("/data/posts.json").json()
-display(posts)
-
+const posts = await FileAttachment("/data/randomposts.json").json()
 ```
 
 
@@ -75,7 +73,7 @@ console.log(image)
 display(html`
     <div id="Hero" class="flex flex-col -mt-4 text-center gap-y-4 sm:gap-y-0 gap-x-12 md:flex-row md:text-left">
         <a href="${url}" class="w-full md:order-2 ">
-         <img src="${image}" class="w-full " alt="">
+         <img src="${image}" class="w-full max-h-[70svh] " alt="">
         </a>
         <div class="px-2 my-auto sm:px-0">
             <a href="${url}">
@@ -95,7 +93,7 @@ display(html`
 
 ```js
 display(html`<div class="grid grid-cols-1 !gap-10 lg:grid-cols-2 lg:!gap-x-12 lg:!gap-y-16  auto-rows-min ">
-    ${posts.map(post =>article(post))}
+    ${posts.sort((a, b) => new Date(b.date) - new Date(a.date)).slice(1, 7).map(post => article(post))}
 </div>`)
 
 ```

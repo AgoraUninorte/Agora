@@ -1,0 +1,58 @@
+[
+    {
+        "title": "The Impact of Tourism on the Colombian Caribbean Economy",
+        "description": "An in-depth analysis of how tourism influences the economic dynamics of the Colombian Caribbean region.",
+        "date": "15/05/2024",
+        "image": "https://picsum.photos/200/300?random=1",
+        "author": "Dr. Juan Martinez",
+        "url": "/articles/the-impact-of-tourism-on-the-colombian-caribbean-economy"
+    },
+    {
+        "title": "Sustainable Agriculture in the Colombian Caribbean",
+        "description": "Exploring the potential of sustainable agriculture practices for economic growth in the Colombian Caribbean.",
+        "date": "15/05/2024",
+        "image": "https://picsum.photos/200/300?random=2",
+        "author": "Prof. Maria Gomez",
+        "url": "/articles/sustainable-agriculture-in-the-colombian-caribbean"
+    },
+    {
+        "title": "Trade Opportunities in the Colombian Caribbean",
+        "description": "A comprehensive review of emerging trade opportunities in the Colombian Caribbean and their potential impact on the local economy.",
+        "date": "15/05/2024",
+        "image": "https://picsum.photos/200/300?random=3",
+        "author": "Dr. Carlos Rodriguez",
+        "url": "/articles/trade-opportunities-in-the-colombian-caribbean"
+    },
+    {
+        "title": "Investment Climate in the Colombian Caribbean",
+        "description": "An overview of the investment climate and opportunities in the Colombian Caribbean.",
+        "date": "15/05/2024",
+        "image": "https://picsum.photos/200/300?random=4",
+        "author": "Dr. Angela Suarez",
+        "url": "/articles/investment-climate-in-the-colombian-caribbean"
+    },
+    {
+        "title": "The Role of SMEs in the Colombian Caribbean Economy",
+        "description": "A study on the contribution of Small and Medium Enterprises to the economy of the Colombian Caribbean.",
+        "date": "15/05/2024",
+        "image": "https://picsum.photos/200/300?random=5",
+        "author": "Prof. Luis Ortega",
+        "url": "/articles/the-role-of-smes-in-the-colombian-caribbean-economy"
+    },
+    {
+        "title": "Economic Impact of Climate Change on the Colombian Caribbean",
+        "description": "An analysis of how climate change could affect the economy of the Colombian Caribbean.",
+        "date": "15/05/2024",
+        "image": "https://picsum.photos/200/300?random=6",
+        "author": "Dr. Patricia Mendez",
+        "url": "/articles/economic-impact-of-climate-change-on-the-colombian-caribbean"
+    },
+    {
+        "title": "Future of the Colombian Caribbean Economy",
+        "description": "Predictions and trends for the future of the Colombian Caribbean economy.",
+        "date": "15/05/2024",
+        "image": "https://picsum.photos/200/300?random=7",
+        "author": "Prof. Jorge Castillo",
+        "url": "/articles/future-of-the-colombian-caribbean-economy"
+    }
+]
