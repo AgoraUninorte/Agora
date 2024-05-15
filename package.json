@@ -1,0 +1,25 @@
+{
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "clean": "rimraf src/.observablehq/cache src/tailwind.css",
+    "build": "rimraf dist && bun styles:build && observable build && cp public/* dist && bun moveImages.js",
+    "styles": "bunx tailwindcss -i ./src/input.css -o ./src/tailwind.css --watch",
+    "styles:build": "bunx tailwindcss -i ./src/input.css -o ./src/tailwind.css",
+    "preview": "observable preview",
+    "dev": "concurrently --kill-others \"bun styles\" \"bun preview\"",
+    "observable": "observable"
+  },
+  "dependencies": {
+    "@observablehq/framework": "^1.7.0",
+    "concurrently": "^8.2.2",
+    "rss": "^1.2.2",
+    "tailwindcss": "^3.4.3"
+  },
+  "devDependencies": {
+    "rimraf": "^5.0.5"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

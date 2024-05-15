@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* :root {
+    --theme-foreground-focus: #38c039;
+} */
+
+.arturo2 {
+    @apply text-3xl text-indigo-400;
+}
+
+body {
+    @apply border-solid border-y-2 border-x-0 border-t-fg-focus;
+}
+
+#observablehq-center {
+    @apply mx-2 mt-0;
+}
+
+.a-btn {
+    @apply inline-block px-4 py-2 text-sm font-medium leading-5 transition-colors duration-150 border shadow-sm border-bg-alt text-fg-focus focus:outline-none focus:shadow-fg-fainter hover:bg-fg-focus;
+}
+
+#observablehq-header {
+    background-image: radial-gradient(rgba(0, 0, 0, 0) 1px, var(--theme-background) 1px);
+    background-size: 4px 4px;
+    backdrop-filter: brightness(100%) blur(3px);
+    @apply w-full pt-6 pb-6 my-0;
+}

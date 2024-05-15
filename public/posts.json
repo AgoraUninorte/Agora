@@ -1,0 +1,10 @@
+[
+  {
+    "title": "Articulos del blog de agora",
+    "author": "Arturo Rebolledo",
+    "image": "/images/agorabanner.jpg",
+    "description": "Articulo del blog del grupo economico de agora",
+    "date": "2024-05-15T05:00:00.000Z",
+    "url": "http://localhost:3000/blog"
+  }
+]
