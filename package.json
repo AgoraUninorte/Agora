@@ -8,7 +8,8 @@
     "styles:build": "bunx tailwindcss -i ./src/input.css -o ./src/tailwind.css",
     "preview": "observable preview",
     "dev": "concurrently --kill-others \"bun styles\" \"bun preview\"",
-    "observable": "observable"
+    "observable": "observable",
+    "deploy": "observable deploy"
   },
   "dependencies": {
     "@observablehq/framework": "^1.7.0",
