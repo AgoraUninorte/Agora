@@ -7,7 +7,7 @@
     "styles": "bunx tailwindcss -i ./src/input.css -o ./src/tailwind.css --watch",
     "styles:build": "bunx tailwindcss -i ./src/input.css -o ./src/tailwind.css",
     "preview": "observable preview",
-    "dev": "concurrently --kill-others \"bun styles\" \"bun preview\"",
+    "dev": "concurrently --kill-others \"bun styles\" \"bun preview --port 3445\"",
     "observable": "observable",
     "deploy": "observable deploy"
   },

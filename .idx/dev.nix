@@ -8,11 +8,14 @@
   packages = [
     # pkgs.go
     pkgs.python311
-    # pkgs.python311Packages.pip
+    pkgs.python311Packages.pip
     pkgs.nodejs_20
-    # pkgs.nodePackages.nodemon
+    pkgs.nodePackages.nodemon
     pkgs.bun
     pkgs.R
+    pkgs.rPackages.flextable
+    pkgs.rPackages.dplyr
+    pkgs.rPackages.languageserver
   ];
 
   # Sets environment variables in the workspace
@@ -21,6 +24,16 @@
     # Search for the extensions you want on https://open-vsx.org/ and use "publisher.id"
     extensions = [
       # "vscodevim.vim"
+      "bradlc.vscode-tailwindcss"
+      "ms-python.debugpy"
+      "ms-python.python"
+      "ms-toolsai.jupyter"
+      "ms-toolsai.jupyter-keymap"
+      "ms-toolsai.jupyter-renderers"
+      "ms-toolsai.vscode-jupyter-cell-tags"
+      "ms-toolsai.vscode-jupyter-slideshow"
+      "rangav.vscode-thunder-client"
+      "REditorSupport.r"
     ];
 
     # Enable previews
@@ -30,7 +43,10 @@
         web = {
           # Example: run "npm run dev" with PORT set to IDX's defined port for previews,
           # and show it in IDX's web preview panel
-          command = ["bun" "run" "dev"];
+          command = ["bun" "run" "preview" "--port"
+        "$PORT"
+        "--host"
+        "0.0.0.0"];
           manager = "web";
           env = {
             # Environment variables to set for your server
