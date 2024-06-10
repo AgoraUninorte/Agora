@@ -57,7 +57,6 @@ index: false
 }
 
 #observablehq-center {
-    margin-top: 0px !important;
     margin-left: 0px !important;
     margin-right: 0px !important;
 }

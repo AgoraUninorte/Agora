@@ -55,7 +55,7 @@ fs.readdir(directoryPath, (err, files) => {
             const parsedPost = {
                 ...post,
                 date: parseDate(post.date),
-                url: domain + "/"+fileName,
+                url: domain + "/" + fileName,
                 title: post.title || _.startCase(post.fileName),
                 author: post.author || "Grupo Agora Uninorte"
 

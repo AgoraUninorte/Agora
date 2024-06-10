@@ -1,18 +1,20 @@
 # Agora
 
-This is an [Observable Framework](https://observablehq.com/framework) project. To start the local preview server, run:
+Este es el repositorio de la página web oficial del Grupo Estudiantil Ágora. Donde nos reunimos los estudiantes apasionados por entender los flujos de la economía.
+
+En este repositorio encontraran el código que construye el sitio junto con los artículos. El sitio esta hecho con [Observable Framework](https://observablehq.com/framework). Si estas desarrollando _google idx_ el servidor de desarrollo se iniciara automáticamente, si estas un entorno de desarrollo local corre:
 
 ```
-npm run dev
+bun dev
 ```
 
-Then visit <http://localhost:3000> to preview your project.
+Si estas
 
-For more, see <https://observablehq.com/framework/getting-started>.
+Luego visita <http://localhost:3000> para ver el proyecto.
 
-## Project structure
 
-A typical Framework project looks like this:
+## Estructura del Proyecto
+Los nuevos articulos se deben crear en la carpeta `src` y las imagenes de esos articulos en la carpeta `src/images`, esas imagenes se deben referenciar en los articulos usando la nomenclatura de markdown `![](/images/agorabanner.jpg)`.
 
 ```ini
 .
@@ -22,11 +24,18 @@ A typical Framework project looks like this:
 │  ├─ data
 │  │  ├─ launches.csv.js       # a data loader
 │  │  └─ events.json           # a static data file
-│  ├─ example-dashboard.md     # a page
-│  ├─ example-report.md        # another page
+│  ├─ images
+│  │  ├─ agorabanner.jpg     # a data loader
+│  ├─ input.css     # Global css styles
+│  ├─ tailwind.css   # Builded and bundled global css styles
+│  ├─ article.md        # An Article
+│  ├─ sobre-nosotros.md        # about page
+│  ├─ contactanos.md        # contact page
+│  ├─ blog.md        # all articles page
 │  └─ index.md                 # the home page
-├─ .gitignore
 ├─ observablehq.config.js      # the project config file
+├─ tailwind.config.js      # Tailwindcss configuration File
+├─ moveImages.js      # Script for moving images to the end route
 ├─ package.json
 └─ README.md
 ```
@@ -45,9 +54,11 @@ A typical Framework project looks like this:
 
 | Command           | Description                                              |
 | ----------------- | -------------------------------------------------------- |
-| `npm install`            | Install or reinstall dependencies                        |
-| `npm run dev`        | Start local preview server                               |
-| `npm run build`      | Build your static site, generating `./dist`              |
-| `npm run deploy`     | Deploy your project to Observable                        |
-| `npm run clean`      | Clear the local data loader cache                        |
-| `npm run observable` | Run commands like `observable help`                      |
+| `bun install`            | Install or reinstall dependencies                        |
+| `bun dev`        | Start local preview server                               |
+| `bun run build`      | Build your static site, generating `./dist`              |
+| `bun run deploy`     | Deploy your project to Observable                        |
+| `bun clean`      | Clear the local data loader cache                        |
+| `bun styles`      | Run the styles on development mode                      |
+| `bun styles:build`      | Build the css styles                    |
+| `bun observable` | Run commands like `observable help`                      |

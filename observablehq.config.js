@@ -27,7 +27,6 @@ export default {
     ".js": ["bun"],
     ".cjs": ["bun"]
   },
-
   // Some additional configuration options and their defaults:
   theme: ["parchment", "midnight"], // try "light", "dark", "slate", etc.
   header: fs.readFileSync('./src/components/header.html', 'utf8'), // what to show in the header (HTML)
