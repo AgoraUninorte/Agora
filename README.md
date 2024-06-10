@@ -8,9 +8,9 @@ En este repositorio encontraran el código que construye el sitio junto con los 
 bun dev
 ```
 
-Si estas
-
 Luego visita <http://localhost:3000> para ver el proyecto.
+
+Puedes acceder al entorno de desarrollo online aqui <https://idx.google.com/agora-1875329>
 
 
 ## Estructura del Proyecto
