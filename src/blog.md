@@ -4,10 +4,23 @@ author: Arturo Rebolledo
 image: /images/agorabanner.jpg
 description: Articulo del blog del grupo economico de agora
 date: 15/05/2024
+toc: false
 ---
 
-## Blog Agora
+```js
+const posts = await FileAttachment("/data/randomposts.json").json()
+```
 
-El blog de agora
+# Todos Los Articulos
 
-![](/images/agorabanner.jpg)
+
+```js
+import article from "./components/article.js"
+```
+
+```js
+display(html`<div class="grid grid-cols-1 !gap-10 lg:grid-cols-2 lg:!gap-x-12 lg:!gap-y-16  auto-rows-min ">
+    ${posts.sort((a, b) => new Date(b.date) - new Date(a.date)).map(post => article(post))}
+</div>`)
+
+```

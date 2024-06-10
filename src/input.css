@@ -14,11 +14,15 @@ body {
     @apply border-solid border-y-2 border-x-0 border-t-fg-focus;
 }
 
-#observablehq-center {
-    @apply mx-2 mt-0;
+html {
+    scroll-behavior: smooth;
 }
 
-.a-btn {
+/* #observablehq-center {
+    @apply mx-2 mt-0;
+} */
+
+button {
     @apply inline-block px-4 py-2 text-sm font-medium leading-5 transition-colors duration-150 border shadow-sm border-bg-alt text-fg-focus focus:outline-none focus:shadow-fg-fainter hover:bg-fg-focus;
 }
 
