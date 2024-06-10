@@ -13,6 +13,8 @@ Luego visita <http://localhost:3000> para ver el proyecto.
 Puedes acceder al entorno de desarrollo online aqui <https://idx.google.com/agora-1875329>
 
 
+Asegurate de undir el circulo ![alt text](image.png) antes de escribir para actualizar los cambios con el servidor principal.
+
 ## Estructura del Proyecto
 Los nuevos articulos se deben crear en la carpeta `src` y las imagenes de esos articulos en la carpeta `src/images`, esas imagenes se deben referenciar en los articulos usando la nomenclatura de markdown `![](/images/agorabanner.jpg)`.
 
