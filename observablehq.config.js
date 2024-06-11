@@ -28,7 +28,7 @@ export default {
     ".cjs": ["bun"]
   },
   // Some additional configuration options and their defaults:
-  theme: ["parchment", "midnight"], // try "light", "dark", "slate", etc.
+  theme: ["parchment", "coffee"], // try "light", "dark", "slate", etc.
   header: fs.readFileSync('./src/components/header.html', 'utf8'), // what to show in the header (HTML)
   footer: fs.readFileSync('./src/components/footer.html', 'utf8'), // what to show in the footer (HTML)
   sidebar: true, // whether to show the sidebar
