@@ -16,11 +16,11 @@ Puedes acceder al entorno de desarrollo online aqui <https://idx.google.com/agor
 Asegurate de undir el circulo ![alt text](image.png) antes de escribir para actualizar los cambios con el servidor principal.
 
 ## Estructura del Proyecto
-Los nuevos articulos se deben crear en la carpeta `src` y las imagenes de esos articulos en la carpeta `src/images`, esas imagenes se deben referenciar en los articulos usando la nomenclatura de markdown `![](/images/agorabanner.jpg)`.
+Los nuevos articulos se deben crear en la carpeta `web` y las imagenes de esos articulos en la carpeta `web/images`, esas imagenes se deben referenciar en los articulos usando la nomenclatura de markdown `![](/images/agorabanner.jpg)`.
 
 ```ini
 .
-├─ src
+├─ web
 │  ├─ components
 │  │  └─ timeline.js           # an importable module
 │  ├─ data
@@ -42,13 +42,13 @@ Los nuevos articulos se deben crear en la carpeta `src` y las imagenes de esos a
 └─ README.md
 ```
 
-**`src`** - This is the “source root” — where your source files live. Pages go here. Each page is a Markdown file. Observable Framework uses [file-based routing](https://observablehq.com/framework/routing), which means that the name of the file controls where the page is served. You can create as many pages as you like. Use folders to organize your pages.
+**`web`** - This is the “source root” — where your source files live. Pages go here. Each page is a Markdown file. Observable Framework uses [file-based routing](https://observablehq.com/framework/routing), which means that the name of the file controls where the page is served. You can create as many pages as you like. Use folders to organize your pages.
 
-**`src/index.md`** - This is the home page for your site. You can have as many additional pages as you’d like, but you should always have a home page, too.
+**`web/index.md`** - This is the home page for your site. You can have as many additional pages as you’d like, but you should always have a home page, too.
 
-**`src/data`** - You can put [data loaders](https://observablehq.com/framework/loaders) or static data files anywhere in your source root, but we recommend putting them here.
+**`web/data`** - You can put [data loaders](https://observablehq.com/framework/loaders) or static data files anywhere in your source root, but we recommend putting them here.
 
-**`src/components`** - You can put shared [JavaScript modules](https://observablehq.com/framework/javascript/imports) anywhere in your source root, but we recommend putting them here. This helps you pull code out of Markdown files and into JavaScript modules, making it easier to reuse code across pages, write tests and run linters, and even share code with vanilla web applications.
+**`web/components`** - You can put shared [JavaScript modules](https://observablehq.com/framework/javascript/imports) anywhere in your source root, but we recommend putting them here. This helps you pull code out of Markdown files and into JavaScript modules, making it easier to reuse code across pages, write tests and run linters, and even share code with vanilla web applications.
 
 **`observablehq.config.js`** - This is the [project configuration](https://observablehq.com/framework/config) file, such as the pages and sections in the sidebar navigation, and the project’s title.
 

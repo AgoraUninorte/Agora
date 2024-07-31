@@ -3,13 +3,7 @@ import path from 'path';
 import yaml from 'js-yaml';
 import _ from 'lodash';
 import RSS from 'rss';
-
-const config = {
-    "domain": "http://localhost:3000",
-    "port": 3000,
-    "title": "Grupo Agora Uninorte",
-    "description": "Grupo estudiantil de economía de la Universidad del Norte",
-}
+import config from '../../config.json'
 
 const directoryPath = path.join(__dirname, '../');
 const posts = [];

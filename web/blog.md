@@ -22,5 +22,4 @@ import article from "./components/article.js"
 display(html`<div class="grid grid-cols-1 !gap-10 lg:grid-cols-2 lg:!gap-x-12 lg:!gap-y-16  auto-rows-min ">
     ${posts.sort((a, b) => new Date(b.date) - new Date(a.date)).map(post => article(post))}
 </div>`)
-
 ```

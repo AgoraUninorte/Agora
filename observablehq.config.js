@@ -1,6 +1,6 @@
 // See https://observablehq.com/framework/config for documentation.
 import fs from 'fs';
-console.log(fs.readFileSync('./src/components/header.html', 'utf8'));
+console.log(fs.readFileSync('./web/components/header.html', 'utf8'));
 export default {
   // The project’s title; used in the sidebar and webpage titles.
   title: "Agora",
@@ -20,17 +20,17 @@ export default {
 
   // Content to add to the head of the page, e.g. for a favicon:
   //head: '<link rel="icon" href="observable.png" type="image/png" sizes="32x32">',
-  head: '<link href="/tailwind.css" rel="stylesheet"/>',
+  head: '<link href="/styles/tailwind.css" rel="stylesheet"/>',
   // The path to the source root.
-  root: "src",
+  root: "web",
   interpreters: {
     ".js": ["bun"],
     ".cjs": ["bun"]
   },
   // Some additional configuration options and their defaults:
   theme: ["parchment", "coffee"], // try "light", "dark", "slate", etc.
-  header: fs.readFileSync('./src/components/header.html', 'utf8'), // what to show in the header (HTML)
-  footer: fs.readFileSync('./src/components/footer.html', 'utf8'), // what to show in the footer (HTML)
+  header: fs.readFileSync('./web/components/header.html', 'utf8'), // what to show in the header (HTML)
+  footer: fs.readFileSync('./web/components/footer.html', 'utf8'), // what to show in the footer (HTML)
   sidebar: true, // whether to show the sidebar
   toc: true, // whether to show the table of contents
   pager: true, // whether to show previous & next links in the footer

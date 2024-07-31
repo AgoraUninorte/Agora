@@ -18,7 +18,7 @@ fs.readFile(sourceFile, 'utf8', (err, data) => {
         posts.forEach((post) => {
             const imagePath = '.' + post.image;
             const imageName = path.basename(imagePath);
-            const sourcePath = path.join(__dirname, "./src", imagePath);
+            const sourcePath = path.join(__dirname, "./web", imagePath);
             const destinationPath = path.join(__dirname, destinationFolder, imagePath);
             console.log(`Source Path: ${sourcePath}`);
             console.log(`Destination Path: ${destinationPath}`);

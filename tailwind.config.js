@@ -1,9 +1,9 @@
 module.exports = {
     content: [
-        './src/*.md',
-        './src/**/*.md',
-        './src/**/*.js',
-        './src/**/*.html',
+        './web/*.md',
+        './web/**/*.md',
+        './web/**/*.js',
+        './web/**/*.html',
 
     ],
     theme: {
