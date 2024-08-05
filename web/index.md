@@ -25,28 +25,28 @@ index: false
 }
 
 @media (min-width: 640px) {
-    #observablehq-center > main {
+    #observablehq-center > main, footer, nav {
         max-width: 640px;
     }
 }
 @media (min-width: 768px) {
-    #observablehq-center > main {
-        max-width: calc(768px - 2rem);
+    #observablehq-center > main, footer, nav {
+        max-width: calc(640 - 2rem);
     }
 }
 @media (min-width: 1024px) {
-    #observablehq-center > main {
-        max-width: calc(1024px - 2rem);
+    #observablehq-center > main, footer, nav {
+        max-width: calc(768px - 2rem);
     }
 }
 @media (min-width: 1280px) {
-    #observablehq-center > main {
-        max-width: calc(1280px - 2rem);
+    #observablehq-center > main, footer, nav {
+        max-width: calc(1024px - 2rem);
     }
 }
 @media (min-width: 1536px) {
-    #observablehq-center > main {
-        max-width: calc(1536px - 2rem);
+    #observablehq-center > main, footer, nav {
+        max-width: calc(1280px - 2rem);
     }
 }
 
@@ -79,9 +79,9 @@ const posts = genPosts.concat(randomPosts)
 var {image, description, title, url, author} = posts[0]
 console.log(image)
 display(html`
-    <div id="Hero" class="flex flex-col -mt-4 text-center gap-y-4 sm:gap-y-0 gap-x-12 md:flex-row md:text-left">
-        <a href="${url}" class="w-full md:order-2 ">
-         <img src="${image}" class="w-full h-[50svh] md:max-h-[70svh] " alt="">
+    <div id="Hero" class="flex flex-col -mt-4 text-center gap-y-4 sm:gap-y-0 md:justify-between md:flex-row md:text-left">
+        <a href="${url}" class="w-full md:order-2 md:max-w-xl ">
+         <img src="${image}" class="w-full h-[50svh] md:max-h-[70svh]  " alt="">
         </a>
         <div class="px-2 my-auto sm:px-0">
             <a href="${url}">
