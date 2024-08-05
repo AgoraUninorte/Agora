@@ -97,44 +97,45 @@ Como se mencionó anteriormente, el azúcar es un insumo productivo para una gra
 Cumpliendo con su papel, la SIC logró realizar una investigación de la cual obtuvo correos electrónicos, mensajes y documentos, entre los cuales se evidenciaba la colusión entre los directivos de los distintos ingenios y gremios con el objetivo principal de obstruir la importación del azúcar al país. Con todas las pruebas la SIC impuso multas a las personas jurídicas y naturales involucradas en el cartel de la siguiente manera
 
 **Tabla 2: PERSONAS JURÍDICAS**
+
 | # | SANCIONADO | MONTO DE LA SANCIÓN |
 |---|------------|---------------------|
-| 1 | ASOCIACIÓN DE CULTIVADORES DE CAÑA DE AZÚCAR DE COLOMBIA - ASOCAÑA - | $ 39,442,331,250.00 |
-| 2 | C.I. DE AZÚCARES Y MIELES S.A. - CIAMSA - | $ 38,470,210,000.00 |
-| 3 | DESARROLLOS INDUSTRIALES Y COMERCIALES S.A. EN LIQUIDACIÓN - DICSA - | $ 900,156,250.00 |
-| 4 | INGENIO RIOPAILA CASTILLA S.A.S. | $ 40,157,825,050.00 |
+| 1 | ASOCIACIÓN DE CULTIVADORES DE CAÑA DE AZÚCAR DE COLOMBIA -ASOCAÑA - | $ 30,445,537,500.00 |
+| 2 | C.I. DE AZÚCARES Y MILES S.A. -CIAMSA- | $ 38,470,210,000.00 |
+| 3 | DESARROLLOS INDUSTRIALES Y COMERCIALES S.A. EN LIQUIDACIÓN -DICSA- | $ 900,156,250.00 |
+| 4 | INGENIO RIOPAILA CASTILLA S.A. | $ 40,157,825,050.00 |
 | 5 | INGENIO DEL CAUCA S.A. | $ 49,059,520,300.00 |
 | 6 | MANUELITA S.A. | $ 32,854,762,150.00 |
-| 7 | INGENIO PROVIDENCIA S.A. | $ 35,399,300,000.00 |
+| 7 | INGENIO PROVIDENCIA S.A. | $ 35,399,300,300.00 |
 | 8 | MAYAGÜEZ S.A. | $ 28,732,855,200.00 |
-| 9 | INGENIO LA CABAÑA S.A. | $ 18,439,389,100.00 |
-| 10 | INGENIO PICHICHI S.A. | $ 13,935,502,500.00 |
-| 11 | INGENIO RISARALDA S.A. | $ 16,667,376,900.00 |
-| 12 | CARLOS SARMIENTO L. & CIA. INGENIO SANCARLOS S.A. | $ 5,351,636,350.00 |
+| 9 | INGENIO LA CABAÑA S.A. | $ 18,419,389,100.00 |
+| 10 | INGENIO PICHICHI S.A. | $ 13,399,902,600.00 |
+| 11 | INGENIO RISARALDA S.A. | $ 16,667,376,300.00 |
+| 12 | CARLOS SARMIENTO L. & CIA INGENIO SANCARLOS S.A. | $ 5,361,636,350.00 |
 | 13 | INGENIO CARMELITA S.A. | $ 7,492,501,800.00 |
 | 14 | CENTRAL TUMACO S.A. EN LIQUIDACIÓN | $ 1,794,514,750.00 |
-| 15 | INGENIO MARÍA LUISA S.A. | $ 2,223,651,850.00 |
+| 15 | INGENIO MARIA LUISA S.A. | $ 2,223,651,850.00 |
 
 **Tabla 3: PERSONAS NATURALES**
+
 
 | # | SANCIONADO | MONTO DE LA SANCIÓN |
 |---|------------|---------------------|
 | 1 | LUIS FERNANDO LONDOÑO CAPURRO | $ 61,857,600.00 |
-| 2 | CLEMENTE CARLOS MIRA VELÁSQUEZ | $ 91,407,700.00 |
-| 3 | HAROLD ANTONIO CERÓN RODRÍGUEZ | $ 52,453,450.00 |
+| 2 | CLEMENTE CARLOS MIRA VELÁSQUEZ | $ 91,497,700.00 |
+| 3 | HAROLD ANTONIO CERÓN RODRÍGUEZ | $ 120,493,450.00 |
 | 4 | JUAN JOSÉ LULLE SUÁREZ | $ 275,781,800.00 |
-| 5 | ADOLFO LEÓN VÉLEZ VÉLEZ | $ 459,162,250.00 |
+| 5 | ADOLFO LEÓN VÉLEZ VÉLEZ | $ 409,162,250.00 |
 | 6 | RODRIGO BELALCÁZAR HERNÁNDEZ | $ 60,568,900.00 |
 | 7 | GONZALO ORTIZ ARISTIZÁBAL | $ 675,027,300.00 |
-| 8 | MAURICIO IRAGORRI RIZO | $ 88,927,750.00 |
-| 9 | JUAN CRISTÓBAL ROMERO RENJIFO | $ 57,548,000.00 |
+| 8 | MAURICIO IRAGORRI RIZO | $ 492,927,750.00 |
+| 9 | JUAN CRISTÓBAL ROMERO RENJIFO | $ 51,548,000.00 |
 | 10 | ANDRÉS REBOLLEDO COBO | $ 98,585,550.00 |
 | 11 | CÉSAR AUGUSTO ARANGO ISAZA | $ 998,098,150.00 |
-| 12 | CARLOS ALBERTO MARTÍNEZ CRUZ | $ 279,090,100.00 |
+| 12 | CARLOS ALBERTO MARTÍNEZ CRUZ | $ 210,058,100.00 |
 | 13 | JAIME VARGAS LÓPEZ | $ 206,836,350.00 |
 | 14 | SANTIAGO SALCEDO BORRERO | $ 1,089,595,850.00 |
 | |**TOTAL VALOR - SANCIONES IMPUESTAS:** \n Personas jurídicas y personas naturales | $ 324,441,178,950.00 |
-
 _**Fuente:** *Tablas tomadas de la SIC en Superindustria ratifica sanciones a empresas y directivos del sector azucarero por cartelización empresarial | Superintendencia de Industria y Comercio (sic.gov.co)_
 
 #### Evaluación de las sanciones
