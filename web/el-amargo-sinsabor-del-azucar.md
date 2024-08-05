@@ -9,6 +9,7 @@ toc: true
 
 # El Amargo Sinsabor del Azúcar 
 ## Una Revisión Desde la Economía Industrial al Cartel Azucarero en Colombia
+<img src="images/el-amargo-sinsabor-del-azucar-droneviews-fr-Y5XHP5Ni41w-unsplash.jpg" width="100%" height="auto">
 
 **Autor: Daniel Acevedo Dumar**
 
