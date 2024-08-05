@@ -96,9 +96,6 @@ Como se mencionó anteriormente, el azúcar es un insumo productivo para una gra
 
 Cumpliendo con su papel, la SIC logró realizar una investigación de la cual obtuvo correos electrónicos, mensajes y documentos, entre los cuales se evidenciaba la colusión entre los directivos de los distintos ingenios y gremios con el objetivo principal de obstruir la importación del azúcar al país. Con todas las pruebas la SIC impuso multas a las personas jurídicas y naturales involucradas en el cartel de la siguiente manera
 
-Here are the two tables from the image transformed into Markdown format:
-
-
 **Tabla 2: PERSONAS JURÍDICAS**
 | # | SANCIONADO | MONTO DE LA SANCIÓN |
 |---|------------|---------------------|
