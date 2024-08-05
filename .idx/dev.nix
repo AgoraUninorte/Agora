@@ -34,6 +34,7 @@
       "ms-toolsai.vscode-jupyter-slideshow"
       "rangav.vscode-thunder-client"
       "REditorSupport.r"
+      "foam.foam-vscode"
     ];
 
     # Enable previews

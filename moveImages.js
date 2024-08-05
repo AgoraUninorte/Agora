@@ -16,10 +16,10 @@ fs.readFile(sourceFile, 'utf8', (err, data) => {
 
         // Mapear cada objeto y mover la imagen
         posts.forEach((post) => {
-            const imagePath = '.' + post.image;
-            const imageName = path.basename(imagePath);
-            const sourcePath = path.join(__dirname, "./web", imagePath);
-            const destinationPath = path.join(__dirname, destinationFolder, imagePath);
+            // const imagePath = '.' + post.image;
+            // const imageName = path.basename(imagePath);
+            const sourcePath = path.join(__dirname, "./web/", post.image);
+            const destinationPath = path.join(__dirname, destinationFolder, post.image);
             console.log(`Source Path: ${sourcePath}`);
             console.log(`Destination Path: ${destinationPath}`);
             fs.mkdir(path.dirname(destinationPath), { recursive: true }, (err) => {
@@ -30,9 +30,9 @@ fs.readFile(sourceFile, 'utf8', (err, data) => {
         
                 fs.copyFile(sourcePath, destinationPath, (err) => {
                     if (err) {
-                        console.error(`Error al mover la imagen ${imagePath}:`, err);
+                        console.error(`Error al mover la imagen ${post.image}:`, err);
                     } else {
-                        console.log(`Imagen ${imagePath} movida correctamente a ${destinationPath}`);
+                        console.log(`Imagen ${post.image} movida correctamente a ${destinationPath}`);
                     }
                 });
             });

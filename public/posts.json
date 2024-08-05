@@ -1,10 +1,11 @@
 [
   {
-    "title": "Articulos del blog de agora",
-    "author": "Arturo Rebolledo",
-    "image": "/images/agorabanner.jpg",
-    "description": "Articulo del blog del grupo economico de agora",
-    "date": "2024-05-15T05:00:00.000Z",
-    "url": "http://localhost:3000/blog"
+    "title": "El Amargo Sinsabor del Azúcar: una Revisión Desde la Economía Industrial al Cartel Azucarero en Colombia",
+    "author": "Daniel Acevedo Dumar",
+    "image": "images/el-amargo-sinsabor-del-azucar-droneviews-fr-Y5XHP5Ni41w-unsplash.jpg",
+    "description": "Se destaca cómo el cartel, compuesto por doce ingenios azucareros, manipuló el mercado al evitar la importación de azúcar para mantener altos precios",
+    "date": "2023-11-25T00:00:00.000Z",
+    "toc": true,
+    "url": "http://localhost:3000/el-amargo-sinsabor-del-azucar"
   }
 ]

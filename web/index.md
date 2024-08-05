@@ -1,5 +1,5 @@
 ---
-theme: ['parchment', 'midnight', wide]
+theme: [parchment, coffee, wide]
 toc: false
 sidebar: false
 date: 15-05-2024
@@ -28,31 +28,25 @@ index: false
     #observablehq-center > main {
         max-width: 640px;
     }
-    #observablehq-header > nav > a, #observablehq-footer {
-         margin-left: 0;
-    }
-    #observablehq-header > nav > div, #observablehq-footer {
-        margin-right: 0;
-    }
 }
 @media (min-width: 768px) {
     #observablehq-center > main {
-        max-width: 768px;
+        max-width: calc(768px - 2rem);
     }
 }
 @media (min-width: 1024px) {
     #observablehq-center > main {
-        max-width: 1024px;
+        max-width: calc(1024px - 2rem);
     }
 }
 @media (min-width: 1280px) {
     #observablehq-center > main {
-        max-width: 1280px;
+        max-width: calc(1280px - 2rem);
     }
 }
 @media (min-width: 1536px) {
     #observablehq-center > main {
-        max-width: 1536px;
+        max-width: calc(1536px - 2rem);
     }
 }
 
@@ -71,8 +65,14 @@ import article from "./components/article.js"
 
 
 ```js
-const posts = await FileAttachment("/data/randomposts.json").json()
+const randomPosts = await FileAttachment("/data/randomposts.json").json()
 ```
+
+```js
+const genPosts = await FileAttachment("/data/posts.json").json()
+const posts = genPosts.concat(randomPosts)
+```
+
 
 
 ```js

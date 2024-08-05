@@ -1,12 +1,14 @@
+
 import fs from 'fs';
 import path from 'path';
 import yaml from 'js-yaml';
 import _ from 'lodash';
 import RSS from 'rss';
-import config from '../../config.json'
+import config from '../../config.json' assert { type: 'json' };
 
 const directoryPath = path.join(__dirname, '../');
 const posts = [];
+
 
 const domain = config.domain;
 
@@ -60,14 +62,13 @@ fs.readdir(directoryPath, (err, files) => {
         }
     });
     // Generate JSON file
-    const jsonFilePath = path.join('./public', 'posts.json');
+    const jsonFilePath = path.join(__dirname, '../../public', 'posts.json');
     fs.writeFileSync(jsonFilePath, JSON.stringify(posts, null, 2));
 
 
     // Generate ATOM RSS XML file
-    const rssFilePath = path.join('./public', 'rss.xml');
+    const rssFilePath = path.join(__dirname, '../../public', 'rss.xml');
     fs.writeFileSync(rssFilePath, feed.xml({ indent: true }));
-
     process.stdout.write(JSON.stringify(posts, null, 2))
 });
 

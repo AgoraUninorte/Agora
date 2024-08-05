@@ -2,10 +2,11 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "clean": "rimraf web/.observablehq/cache web/tailwind.css",
-    "build": "rimraf dist && bun styles:build && observable build && cp public/* dist && bun moveImages.js",
+    "clean": "rimraf web/.observablehq/cache web/tailwind.css dist",
+    "build": "rimraf dist && bun styles:build && observable build && bun move",
     "styles": "bunx tailwindcss -i ./web/styles/input.css -o ./web/styles/tailwind.css --watch",
     "styles:build": "bunx tailwindcss -i ./web/styles/input.css -o ./web/styles/tailwind.css",
+    "move": "cp public/* dist && bun moveImages.js",
     "preview": "observable preview",
     "dev": "concurrently --kill-others \"bun styles\" \"bun preview --port 3445\"",
     "observable": "observable",
