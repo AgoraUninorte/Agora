@@ -14,13 +14,13 @@ export default {
 
   // Content to add to the head of the page, e.g. for a favicon:
   //head: '<link rel="icon" href="observable.png" type="image/png" sizes="32x32">',
-  head: '<link href="/styles/tailwind.css" rel="stylesheet"/>',
   // The path to the source root.
   root: "web",
   interpreters: {
     ".js": ["bun"],
     ".cjs": ["bun"]
   },
+  head: fs.readFileSync('./web/components/head.html', 'utf8'),
   // Some additional configuration options and their defaults:
   theme: ["parchment", "coffee"], // try "light", "dark", "slate", etc.
   header: fs.readFileSync('./web/components/header.html', 'utf8'), // what to show in the header (HTML)
