@@ -13,8 +13,13 @@
     "deploy": "observable deploy"
   },
   "dependencies": {
+    "@deco313/markdown-it-replace": "^1.2.0",
+    "@nolebase/markdown-it-bi-directional-links": "^2.4.0",
     "@observablehq/framework": "^1.7.1",
     "concurrently": "^8.2.2",
+    "markdown-it-footnote": "^4.0.0",
+    "markdown-it-wikilinks": "^1.4.0",
+    "md-replacer-plugin": "^1.0.1",
     "rss": "^1.2.2",
     "tailwindcss": "^3.4.3"
   },

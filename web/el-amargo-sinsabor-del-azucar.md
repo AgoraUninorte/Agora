@@ -55,6 +55,9 @@ Describiendo brevemente cada concepto, tenemos que, la cartelización es el acue
 Con el propósito de explicar cómo existió el cartel y como se dió la colusión, evaluaremos la composición gremial del sector, así como los mecanismos que fueron corrompidos para facilitar esta situación. De este modo, tenemos que la anteriormente mencionada ASOCAÑA según la SIC (2015), es una entidad que agrupa a los 12 ingenios azucareros investigados y unos cuantos cultivadores de caña, representando sus intereses ante entidades gubernamentales e internacionales. Esto no solo facilita la comunicación entre los ingenios, sino que además a ASOCAÑA se le encomendó la administración del Fondo de Estabilización de Precios del Azúcar (FEPA), el cual se encarga de “procurar un ingreso remunerativo, regular la producción nacional e incrementar las exportaciones” (FEPA, s.f.). Este fondo, menciona la SIC (2015) permitiría la colusión de los ingenios a través de compartir información privilegiada y estrategias a seguir, mutando de la herramienta que se supone que debía ser y convirtiéndose en el ente asignador de cuotas de mercado para el azúcar en Colombia. 
 
 **Tabla 1.**
+
+<div class="card p-0 overflow-x-auto  max-w-3xl" >
+
 | INGENIO | 2005 | 2006 | 2007 | 2008 | 2009 | 2010 | 2011 | 2012 |
 |---------|------|------|------|------|------|------|------|------|
 | RIOPAILA | 9,6% | 9,9% | 10,7% | 20,6% | 19,8% | 20,1% | 19,7% | 20,7% |
@@ -73,6 +76,7 @@ Con el propósito de explicar cómo existió el cartel y como se dió la colusi�
 | AGROINDUSTRIAS | 0,0% | 0,0% | 0,0% | 0,6% | 0,4% | 2,2% | 0,9% | 0,8% |
 | CARARE | 0,7% | 0,9% | 0,8% | 0,8% | 0,0% | 0,0% | 0,0% | 0,0% |
 | CASTILLA | 7,1% | 7,6% | 9,1% | 0,0% | 0,0% | 0,0% | 0,0% | 0,0% |
+</div>
 
 **Fuente:** Elaboración SIC con base en información contenida en el Expediente. 
 _*Tomado de “Resolución Número 80847 de 2015” del Ministerio de Comercio, Industria y Turismo; Superintendencia de Industria y Comercio_
@@ -98,6 +102,8 @@ Cumpliendo con su papel, la SIC logró realizar una investigación de la cual ob
 
 **Tabla 2: PERSONAS JURÍDICAS**
 
+<div class="card p-0  overflow-x-auto">
+
 | # | SANCIONADO | MONTO DE LA SANCIÓN |
 |---|------------|---------------------|
 | 1 | ASOCIACIÓN DE CULTIVADORES DE CAÑA DE AZÚCAR DE COLOMBIA -ASOCAÑA - | $ 30,445,537,500.00 |
@@ -116,8 +122,11 @@ Cumpliendo con su papel, la SIC logró realizar una investigación de la cual ob
 | 14 | CENTRAL TUMACO S.A. EN LIQUIDACIÓN | $ 1,794,514,750.00 |
 | 15 | INGENIO MARIA LUISA S.A. | $ 2,223,651,850.00 |
 
+</div>
+
 **Tabla 3: PERSONAS NATURALES**
 
+<div class="card p-0 overflow-x-auto">
 
 | # | SANCIONADO | MONTO DE LA SANCIÓN |
 |---|------------|---------------------|
@@ -135,7 +144,10 @@ Cumpliendo con su papel, la SIC logró realizar una investigación de la cual ob
 | 12 | CARLOS ALBERTO MARTÍNEZ CRUZ | $ 210,058,100.00 |
 | 13 | JAIME VARGAS LÓPEZ | $ 206,836,350.00 |
 | 14 | SANTIAGO SALCEDO BORRERO | $ 1,089,595,850.00 |
-| |**TOTAL VALOR - SANCIONES IMPUESTAS:** \n Personas jurídicas y personas naturales | $ 324,441,178,950.00 |
+| |**TOTAL VALOR - SANCIONES IMPUESTAS:** <br> Personas jurídicas y personas naturales | $ 324,441,178,950.00 |
+
+</div>
+
 _**Fuente:** *Tablas tomadas de la SIC en Superindustria ratifica sanciones a empresas y directivos del sector azucarero por cartelización empresarial | Superintendencia de Industria y Comercio (sic.gov.co)_
 
 #### Evaluación de las sanciones
@@ -185,3 +197,9 @@ Resolución N°80847 de 2015 (Ministerio de Comercio, Industria y Turismo, y Sup
  
 
 “Superindustria ratifica sanciones a empresas y directivos del sector azucarero por cartelización empresarial”. (2015) SIC. [Superindustria ratifica sanciones a empresas y directivos del sector azucarero por cartelización empresarial | Superintendencia de Industria y Comercio (sic.gov.co)](https://www.sic.gov.co/noticias/superindustria-ratifica-sanciones-a-empresas-y-directivos-del-sector-azucarero-por-cartelizacion-empresarial)
+
+<style>
+    .overflow-x-auto {
+    overflow-x: auto;
+}
+</style>

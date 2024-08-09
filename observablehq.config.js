@@ -1,9 +1,11 @@
 // See https://observablehq.com/framework/config for documentation.
 import fs from 'fs';
-console.log(fs.readFileSync('./web/components/header.html', 'utf8'));
+import MarkdownItFootnote from "markdown-it-footnote";
+import { BiDirectionalLinks } from '@nolebase/markdown-it-bi-directional-links'
+
 export default {
   // The project’s title; used in the sidebar and webpage titles.
-  title: "Agora",
+  title: "ÁGORA",
 
   // The pages and sections in the sidebar. If you don’t specify this option,
   // all pages will be listed in alphabetical order. Listing pages explicitly
@@ -20,8 +22,9 @@ export default {
     ".js": ["bun"],
     ".cjs": ["bun"]
   },
-  head: fs.readFileSync('./web/components/head.html', 'utf8'),
+  markdownIt: (md) => md.use(BiDirectionalLinks({dir: 'web', debug: true})).use(MarkdownItFootnote),
   // Some additional configuration options and their defaults:
+  head: fs.readFileSync('./web/components/head.html', 'utf8'),
   theme: ["parchment", "coffee"], // try "light", "dark", "slate", etc.
   header: fs.readFileSync('./web/components/header.html', 'utf8'), // what to show in the header (HTML)
   footer: fs.readFileSync('./web/components/footer.html', 'utf8'), // what to show in the footer (HTML)
