@@ -1,6 +1,6 @@
 import { html } from "npm:htl";
 
-export default function article({ title, description, image, url, author }) {
+export default function article({ title, description, image, url, author, date = "2024-11-25T00:00:00.000Z", category }) {
     return html.fragment`
     <article class="basis-1 group duration-200  hover:bg-bg-alt  transition-all hover:shadow-xl lg:basis-[45%] flex flex-col md:flex-row gap-3 md:max-w-2xl ">
         <a href="${url}" class="w-full h-full mx-auto md:w-1/2 overflow-clip">
@@ -8,9 +8,8 @@ export default function article({ title, description, image, url, author }) {
         </a>
         <div class="flex flex-col basis-1/2 mx-2 md:mx-0 sm:py-2">
             <div class="flex flex-row gap-2 font-light text-sm align-middle text-fg-faint ">
-                <span class="uppercase tracking-widest">category</span>
-                &#9830;
-                <span>May 27, 2024</span> 
+                ${category ? '<span class="uppercase tracking-widest">' + category +'</span> &#9830;' : ''}
+                <span>${new Date(date).toLocaleDateString('es-CO', {year: 'numeric', month: 'short', day: 'numeric'})}</span> 
             </div>
             <a href="${url}" class="my-2">
             <h3 class="group-hover:text-fg-focus text-fg leading-[95%] transition-colors duration-200 tracking-wide">${title}</h3>

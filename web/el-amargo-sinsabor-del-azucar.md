@@ -5,6 +5,7 @@ image: images/el-amargo-sinsabor-del-azucar-droneviews-fr-Y5XHP5Ni41w-unsplash.j
 description: Se destaca cómo el cartel, compuesto por doce ingenios azucareros, manipuló el mercado al evitar la importación de azúcar para mantener altos precios
 date: 25/11/2023
 toc: true
+category: 'ECONOMÍA'
 ---
 
 # El Amargo Sinsabor del Azúcar 

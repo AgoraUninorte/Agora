@@ -432,11 +432,6 @@
   color: rgb(10 10 10 / var(--tw-text-opacity));
 }
 
-.text-black {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
 .transition-all {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -564,6 +559,39 @@ button:focus {
   .my-container {
     max-width: calc(1280px - 2rem);
   }
+}
+
+.logo-text {
+  --tw-text-opacity: 1;
+  color: rgb(10 10 10 / var(--tw-text-opacity));
+}
+
+@media (prefers-color-scheme: dark) {
+  .logo-text {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+  }
+}
+
+/* Define the animation */
+
+@keyframes rotateTwice {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(720deg);
+    /* 2 full rotations */
+  }
+}
+
+/* Apply the animation on hover */
+
+#logo:hover .rotating-group {
+  animation: rotateTwice 2s ease-in-out forwards;
+  transform-origin: center center;
+  /* Adjust the origin point of rotation */
 }
 
 .hover\:bg-bg-alt:hover {
@@ -698,26 +726,5 @@ button:focus {
     line-height: 1;
   }
 }
-
-@media (prefers-color-scheme: dark) {
-  .dark\:text-white {
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255 / var(--tw-text-opacity));
-  }
-}
-
-/* Define the animation */
-@keyframes rotateTwice {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(720deg); /* 2 full rotations */
-  }
-}
-
-/* Apply the animation on hover */
-#logo:hover .rotating-group {
-  animation: rotateTwice 2s ease-in-out forwards;
-  transform-origin: center center; /* Adjust the origin point of rotation */
-}
+  
+  
