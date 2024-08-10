@@ -4,6 +4,7 @@ module.exports = {
         './web/**/*.md',
         './web/**/*.js',
         './web/**/*.html',
+        './web/**/*.svg',
 
     ],
     theme: {

@@ -17,16 +17,23 @@ index: false
 }
 
 #observablehq-header > nav > a, #observablehq-footer {
-    margin-left: 1rem;
+    margin-left: 0.5rem;
 }
 
 #observablehq-header > nav > div, #observablehq-footer {
-    margin-right: 1rem;
+    margin-right: 0.5rem;
 }
 
 @media (min-width: 640px) {
     #observablehq-center > main, footer, nav {
         max-width: 85vw;
+    }
+    #observablehq-header > nav > a, #observablehq-footer {
+    margin-left: 0;
+}
+
+    #observablehq-header > nav > div, #observablehq-footer {
+        margin-right: 0;
     }
 }
 

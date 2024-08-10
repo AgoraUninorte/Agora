@@ -59,3 +59,25 @@ button {
         max-width: calc(1280px - 2rem);
     }
 }
+
+.logo-text {
+    @apply text-neutral-950 dark:text-white;
+}
+
+/* Define the animation */
+@keyframes rotateTwice {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(720deg); /* 2 full rotations */
+    }
+  }
+  
+  /* Apply the animation on hover */
+  #logo:hover .rotating-group {
+    animation: rotateTwice 2s ease-in-out forwards;
+    transform-origin: center center; /* Adjust the origin point of rotation */
+  }
+  
+  
