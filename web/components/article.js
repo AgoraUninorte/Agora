@@ -8,7 +8,7 @@ export default function article({ title, description, image, url, author, date =
         </a>
         <div class="flex flex-col basis-1/2 mx-2 md:mx-0 sm:py-2">
             <div class="flex flex-row gap-2 font-light text-sm align-middle text-fg-faint ">
-                ${category ? '<span class="uppercase tracking-widest">' + category +'</span> &#9830;' : ''}
+                ${category ? html.fragment`<span class="uppercase tracking-widest">${category}</span> &#9830;` : ''}
                 <span>${new Date(date).toLocaleDateString('es-CO', {year: 'numeric', month: 'short', day: 'numeric'})}</span> 
             </div>
             <a href="${url}" class="my-2">
