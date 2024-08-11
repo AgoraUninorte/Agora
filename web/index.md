@@ -137,3 +137,24 @@ display(html`<div class="grid grid-cols-2 !gap-10 sm:grid-cols-3 lg:grid-cols-5 
          `)}
 </div>`)
 ```
+
+## Revista
+```html
+<div class="grid grid-cols-6 sm:grid-cols-9 md:grid-cols-[repeat(13,_minmax(0,_1fr))]">
+    <img class="w-full" src="${await FileAttachment('/images/agora-edicion-2.jpg').url()}" />
+    <img class="w-full" src="${await FileAttachment('/images/agora-edicion-3.jpg').url()}" />
+    <img class="w-full" src="${await FileAttachment('/images/agora-edicion-4.jpg').url()}" />
+    <img class="w-full" src="${await FileAttachment('/images/agora-edicion-5.png').url()}" />
+    <img class="w-full" src="${await FileAttachment('/images/agora-edicion-6.png').url()}" />
+    <img class="w-full" src="${await FileAttachment('/images/agora-edicion-7.png').url()}" />
+    <img class="w-full" src="${await FileAttachment('/images/agora-edicion-8.png').url()}" />
+    <img class="w-full" src="${await FileAttachment('/images/agora-edicion-9.png').url()}" />
+    <img class="w-full" src="${await FileAttachment('/images/agora-edicion-10.png').url()}" />
+    <img class="w-full" src="${await FileAttachment('/images/agora-edicion-11.png').url()}" />
+    <img class="w-full" src="${await FileAttachment('/images/agora-edicion-12.png').url()}" />
+    <a href="https://www.uninorte.edu.co/documents/16886152/16893875/Revista+Agora+13va+edicion.pdf/7cebd1fc-0fc3-b18b-3a81-8d22c5add22a?t=1652803650939">
+        <img class="w-full" src="${await FileAttachment('/images/agora-edicion-13.png').url()}" />
+    </a>
+    <img class="w-full" src="${await FileAttachment('/images/agora-edicion-14.jpeg').url()}" />
+</div>
+```
