@@ -6,6 +6,8 @@ date: 15-05-2024
 index: false
 ---
 
+
+
 <style>
 #observablehq-center > main {
     margin-left: auto;
@@ -88,3 +90,51 @@ display(html`<div class="grid grid-cols-1 !gap-10 lg:grid-cols-2 lg:!gap-x-12 lg
     ${posts.sort((a, b) => new Date(b.date) - new Date(a.date)).slice(1, 7).map(post => article(post))}
 </div>`)
 ```
+
+
+<h2 class="mt-12 pl-2">Junta Directiva 2024</h2>
+
+```js
+const members = [{
+        name: 'Daniel Acevedo Dumar',
+        title: 'Presidente',
+        // description: '"En este año 2024, mi compromiso como Presidente de Ágora es impulsar un espacio de innovación y colaboración, donde cada voz sea escuchada y cada idea tenga el potencial de convertirse en acción."',
+        image: await FileAttachment('/images/Daniel.jpg').url(),
+    },
+    {
+        name: 'Allison Ramirez',
+        title: 'Vicepresidenta y Directora de Revista',
+        // description: '"En este año 2024, me enfocaré en mantener la excelencia editorial y brindarles a los estudiantes la oportunidad de publicar sus investigaciones, análisis y opiniones sobre temas económicos relevantes. La revista es un espacio para que compartan su talento y creatividad y para que sus ideas tengan un impacto en la comunidad"',
+        image: await FileAttachment('/images/Allison.jpeg').url(),
+    },
+    {
+        name: 'Guillermo Villadiego',
+        title: 'Tesorero',
+        description: '',
+        image: await FileAttachment('/images/Guillermo.jpg').url(),
+    },
+    {
+        name: 'Dana Ramirez',
+        title: 'Subdirectora Académica',
+        description: '',
+        image: await FileAttachment('/images/Dana.jpg').url(),
+    },
+    {
+        name: 'Cristian Palmera',
+        title: 'Director de Logistica',
+        description: '',
+        image: await FileAttachment('/images/Cristian.jpg').url(),
+    },
+    ]
+display(html`<div class="grid grid-cols-2 !gap-10 lg:grid-cols-5 lg:!gap-x-12 lg:!gap-y-16">
+    ${members.map((member, id) => html.fragment`
+        <article class="w-full text-center group hover:bg-bg-alt hover:shadow-xl ">
+            <img src="${member.image}" class="w-[inherit] group-hover:saturate-200 transition-all group-hover:scale-95 ease-out duration-700"/>
+            <h3 class="group-hover:text-fg-focus">${member.name}</h3>
+            <b>${member.title}</b>
+            <p>${member.description}</p>
+         </article>
+         `)}
+</div>`)
+```
+
