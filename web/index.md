@@ -126,7 +126,7 @@ const members = [{
         image: await FileAttachment('/images/Cristian.jpg').url(),
     },
     ]
-display(html`<div class="grid grid-cols-2 !gap-10 sm:grid-cols-3 lg:grid-cols-5 lg:!gap-x-12 lg:!gap-y-16">
+display(html`<div class="grid grid-cols-2 !gap-x-10 sm:grid-cols-3 lg:grid-cols-5 lg:!gap-x-12 lg:!gap-y-8">
     ${members.map((member, id) => html.fragment`
         <article class="w-full text-center group hover:bg-bg-alt hover:shadow-xl ">
             <img src="${member.image}" class="w-[inherit] group-hover:saturate-200 transition-all group-hover:scale-95 ease-out duration-700"/>
