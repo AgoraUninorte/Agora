@@ -125,6 +125,12 @@ const members = [{
         description: '',
         image: await FileAttachment('/images/Cristian.jpg').url(),
     },
+    {
+        name: 'Ana María Llinás',
+        title: 'Directora de Comunicaciones',
+        description: '',
+        image: await FileAttachment('/images/Ana.jpg').url(),
+    },
     ]
 display(html`<div class="grid grid-cols-2 !gap-x-10 sm:grid-cols-3 lg:grid-cols-5 lg:!gap-x-12 lg:!gap-y-8">
     ${members.map((member, id) => html.fragment`
