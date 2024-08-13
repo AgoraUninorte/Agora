@@ -75,7 +75,7 @@ display(html`
         </a>
         <div class="px-2 my-auto sm:px-0">
             <a href="${url}">
-              <h1 class="mt-0 leading-[90%] lg:text-6xl text-4xl md:text-5xl text-pretty text-fg-focus capitalize">${title}</h1>
+              <h1 class="mt-0 leading-[90%] lg:text-6xl text-4xl md:text-5xl text-pretty text-fg-focus">${title}</h1>
            </a>
             <p class="text-balance">${description}</p>
             <p class="italic text-fg-muted">Por ${author}</p>
