@@ -70,12 +70,12 @@ var {image, description, title, url, author} = posts[0]
 console.log(image)
 display(html`
     <div id="Hero" class="flex flex-col -mt-4 text-center gap-y-4 sm:gap-y-0 md:justify-between md:flex-row md:text-left">
-        <a href="${url}" class="w-full md:order-2  md:max-w-[30vw] lg:max-w-[40vw] object-cover object-center">
-         <img src="${image}" class="w-full h-[50svh] md:max-h-[70svh]  " alt="">
+        <a href="${url}" class="w-full md:order-2  md:max-w-[30vw] lg:max-w-[40vw] ">
+         <img src="${image}" class="w-full h-[50svh] md:max-h-[70svh]  object-cover object-center" alt="">
         </a>
         <div class="px-2 my-auto sm:px-0">
             <a href="${url}">
-              <h1 class="mt-0 leading-[90%] lg:text-6xl text-4xl md:text-5xl text-pretty text-fg-focus">${title}</h1>
+              <h1 class="mt-0 leading-[90%] lg:text-6xl text-4xl md:text-5xl text-pretty text-fg-focus font-bold">${title}</h1>
            </a>
             <p class="text-balance">${description}</p>
             <p class="italic text-fg-muted">Por ${author}</p>
