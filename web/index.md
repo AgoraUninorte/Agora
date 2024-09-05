@@ -70,7 +70,7 @@ var {image, description, title, url, author} = posts[0]
 console.log(image)
 display(html`
     <div id="Hero" class="flex flex-col -mt-4 text-center gap-y-4 sm:gap-y-0 md:justify-between md:flex-row md:text-left">
-        <a href="${url}" class="w-full md:order-2  md:max-w-[30vw] lg:max-w-[40vw]">
+        <a href="${url}" class="w-full md:order-2  md:max-w-[30vw] lg:max-w-[40vw] object-cover object-center">
          <img src="${image}" class="w-full h-[50svh] md:max-h-[70svh]  " alt="">
         </a>
         <div class="px-2 my-auto sm:px-0">
