@@ -1,11 +1,21 @@
 [
   {
-    "title": "El Amargo Sinsabor del Azúcar: una Revisión Desde la Economía Industrial al Cartel Azucarero en Colombia",
+    "title": "Oportunidades y Retos en la Economía del Caribe Colombiano ¿Cómo Afectan a los Jóvenes Emprendedores?",
+    "author": "Andrés Gutierrez",
+    "image": "images/oportunidades-y-retos-en-la-economia-del-caribe-colombiano-20210930-CafeFiestaLibro (3)-1.jpg",
+    "description": "Este artículo explora cómo áreas como el turismo, la energía renovable y la tecnología están generando potenciales de inversión, mientras que también se enfrentan desafíos como la infraestructura y el acceso a financiamiento.",
+    "date": "2024-09-05T00:00:00.000Z",
+    "toc": false,
+    "url": "https://agorauninorte.pages.dev/oportunidades-y-retos-en-la-economia-del-caribe-colombiano"
+  },
+  {
+    "title": "El Amargo Sinsabor del Azúcar: una revisión desde la economía industrial al Cartel Azucarero en Colombia",
     "author": "Daniel Acevedo Dumar",
     "image": "images/el-amargo-sinsabor-del-azucar-droneviews-fr-Y5XHP5Ni41w-unsplash.jpg",
     "description": "Se destaca cómo el cartel, compuesto por doce ingenios azucareros, manipuló el mercado al evitar la importación de azúcar para mantener altos precios",
     "date": "2023-11-25T00:00:00.000Z",
     "toc": true,
+    "category": "ECONOMÍA",
     "url": "https://agorauninorte.pages.dev/el-amargo-sinsabor-del-azucar"
   }
 ]

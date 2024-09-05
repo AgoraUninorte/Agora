@@ -4,15 +4,23 @@
         <description><![CDATA[Grupo estudiantil de economía de la Universidad del Norte]]></description>
         <link>https://agorauninorte.pages.dev</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sat, 10 Aug 2024 22:50:27 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 05 Sep 2024 21:30:59 GMT</lastBuildDate>
         <atom:link href="https://agorauninorte.pages.dev/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sat, 10 Aug 2024 22:50:27 GMT</pubDate>
+        <pubDate>Thu, 05 Sep 2024 21:30:59 GMT</pubDate>
         <language><![CDATA[es]]></language>
         <managingEditor><![CDATA[arosenstielhl@uninorte.edu.co]]></managingEditor>
         <webMaster><![CDATA[arosenstielhl@uninorte.edu.co]]></webMaster>
         <ttl>600</ttl>
         <item>
-            <title><![CDATA[El Amargo Sinsabor del Azúcar: una Revisión Desde la Economía Industrial al Cartel Azucarero en Colombia]]></title>
+            <title><![CDATA[Oportunidades y Retos en la Economía del Caribe Colombiano ¿Cómo Afectan a los Jóvenes Emprendedores?]]></title>
+            <description><![CDATA[Este artículo explora cómo áreas como el turismo, la energía renovable y la tecnología están generando potenciales de inversión, mientras que también se enfrentan desafíos como la infraestructura y el acceso a financiamiento.]]></description>
+            <link>https://agorauninorte.pages.dev/oportunidades-y-retos-en-la-economia-del-caribe-colombiano</link>
+            <guid isPermaLink="true">https://agorauninorte.pages.dev/oportunidades-y-retos-en-la-economia-del-caribe-colombiano</guid>
+            <dc:creator><![CDATA[Andrés Gutierrez]]></dc:creator>
+            <pubDate>Thu, 05 Sep 2024 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[El Amargo Sinsabor del Azúcar: una revisión desde la economía industrial al Cartel Azucarero en Colombia]]></title>
             <description><![CDATA[Se destaca cómo el cartel, compuesto por doce ingenios azucareros, manipuló el mercado al evitar la importación de azúcar para mantener altos precios]]></description>
             <link>https://agorauninorte.pages.dev/el-amargo-sinsabor-del-azucar</link>
             <guid isPermaLink="true">https://agorauninorte.pages.dev/el-amargo-sinsabor-del-azucar</guid>
