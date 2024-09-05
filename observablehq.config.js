@@ -12,6 +12,7 @@ export default {
   // lets you organize them into sections and have unlisted pages.
   pages: [
     {name: "El Amargo Sinsabor del Azúcar", path: "/el-amargo-sinsabor-del-azucar"},
+    {name: "Oportunidades y Retos en la Economía del Caribe Colombiano", path:"/oportunidades-y-retos-en-la-economia-del-caribe-colombiano"}
   ],
 
   // Content to add to the head of the page, e.g. for a favicon:
