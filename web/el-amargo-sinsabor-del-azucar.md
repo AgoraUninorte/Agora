@@ -1,5 +1,5 @@
 ---
-title: "El Amargo Sinsabor del Azúcar: una Revisión Desde la Economía Industrial al Cartel Azucarero en Colombia"
+title: "El Amargo Sinsabor del Azúcar: una revisión desde la economía industrial al Cartel Azucarero en Colombia"
 author: Daniel Acevedo Dumar
 image: images/el-amargo-sinsabor-del-azucar-droneviews-fr-Y5XHP5Ni41w-unsplash.jpg
 description: Se destaca cómo el cartel, compuesto por doce ingenios azucareros, manipuló el mercado al evitar la importación de azúcar para mantener altos precios
@@ -183,21 +183,11 @@ Finalmente, este caso también nos enseña la importancia de generar una cultura
 ---
 
 ## Bibliografía
-Fondo de Estabilización de Precios del Azúcar (FEPA). (S.F) [Fondo de Estabilización de Precios del Azúcar - FEPA](https://www.fepa.com.co/) 
-
-“Azúcar, uno de los grandes motores de la economía en Colombia".(2019) SICEX.  [Azúcar, uno de los grandes motores de la economía en Colombia - SICEX - Inteligencia de Mercados](https://nam02.safelinks.protection.outlook.com/GetUrlReputation)
-
- 
-
-Kalmanovitz, S (2015). “El cartel del azúcar”. El Espectador. [El cartel del azúcar | EL ESPECTADOR](https://www.elespectador.com/opinion/columnistas/salomon-kalmanovitz/el-cartel-del-azucar-column-603957/)
-
- 
-
-Resolución N°80847 de 2015 (Ministerio de Comercio, Industria y Turismo, y Superintendencia de Industria y Comercio). [resolucion_103652_azucar.pdf (sic.gov.co)](https://www.sic.gov.co/recursos_user/documentos/resolucion_103652_azucar.pdf) 
-
- 
-
-“Superindustria ratifica sanciones a empresas y directivos del sector azucarero por cartelización empresarial”. (2015) SIC. [Superindustria ratifica sanciones a empresas y directivos del sector azucarero por cartelización empresarial | Superintendencia de Industria y Comercio (sic.gov.co)](https://www.sic.gov.co/noticias/superindustria-ratifica-sanciones-a-empresas-y-directivos-del-sector-azucarero-por-cartelizacion-empresarial)
+- Fondo de Estabilización de Precios del Azúcar (FEPA). (S.F) [Fondo de Estabilización de Precios del Azúcar - FEPA](https://www.fepa.com.co/) 
+- “Azúcar, uno de los grandes motores de la economía en Colombia".(2019) SICEX.  [Azúcar, uno de los grandes motores de la economía en Colombia - SICEX - Inteligencia de Mercados](https://nam02.safelinks.protection.outlook.com/GetUrlReputation)
+- Kalmanovitz, S (2015). “El cartel del azúcar”. El Espectador. [El cartel del azúcar | EL ESPECTADOR](https://www.elespectador.com/opinion/columnistas/salomon-kalmanovitz/el-cartel-del-azucar-column-603957/)
+- Resolución N°80847 de 2015 (Ministerio de Comercio, Industria y Turismo, y Superintendencia de Industria y Comercio). [resolucion_103652_azucar.pdf (sic.gov.co)](https://www.sic.gov.co/recursos_user/documentos/resolucion_103652_azucar.pdf) 
+- “Superindustria ratifica sanciones a empresas y directivos del sector azucarero por cartelización empresarial”. (2015) SIC. [Superindustria ratifica sanciones a empresas y directivos del sector azucarero por cartelización empresarial | Superintendencia de Industria y Comercio (sic.gov.co)](https://www.sic.gov.co/noticias/superindustria-ratifica-sanciones-a-empresas-y-directivos-del-sector-azucarero-por-cartelizacion-empresarial)
 
 <style>
     .overflow-x-auto {
