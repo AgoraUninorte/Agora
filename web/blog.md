@@ -9,9 +9,8 @@ toc: false
 ---
 
 ```js
-const random = await FileAttachment("/data/randomposts.json").json()
 const generated = await FileAttachment("/data/posts.json").json()
-const posts = generated.concat(random)
+const posts = generated
 ```
 
 # Todos Los Articulos

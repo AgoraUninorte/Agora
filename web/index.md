@@ -53,14 +53,9 @@ index: false
 import article from "./components/article.js"
 ```
 
-
-```js
-const randomPosts = await FileAttachment("/data/randomposts.json").json()
-```
-
 ```js
 const genPosts = await FileAttachment("/data/posts.json").json()
-const posts = genPosts.concat(randomPosts)
+const posts = genPosts
 ```
 
 
