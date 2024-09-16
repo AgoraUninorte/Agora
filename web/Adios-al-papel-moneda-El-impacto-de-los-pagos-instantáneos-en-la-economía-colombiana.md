@@ -1,5 +1,5 @@
 ---
-title: "Adiós al papel monedaa: El Impacto de los pagos instantáneos en la economía colombiana"
+title: "Adiós al papel moneda: El Impacto de los pagos instantáneos en la economía colombiana"
 author: Juan Agamez
 image: 'https://www.banrep.gov.co/sites/default/files/inline-images/bre-b-minisite.jpg'
 description: La economía colombiana, al igual que muchas otras en el mundo, está experimentando una revolución digital que ha transformado la manera en que realizamos transacciones.
