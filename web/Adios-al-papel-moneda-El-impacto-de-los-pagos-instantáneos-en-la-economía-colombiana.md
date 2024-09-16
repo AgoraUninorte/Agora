@@ -3,7 +3,7 @@ title: "Adiós al papel monea: El Impacto de los pagos instantáneos en la econo
 author: Juan Agamez
 image: 'https://www.banrep.gov.co/sites/default/files/inline-images/bre-b-minisite.jpg'
 description: La economía colombiana, al igual que muchas otras en el mundo, está experimentando una revolución digital que ha transformado la manera en que realizamos transacciones.
-date: 16/09/2023
+date: 16/09/2024
 toc: true
 category: 'ECONOMÍA'
 ---
