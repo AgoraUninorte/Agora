@@ -60,8 +60,8 @@ Contenido de tu artículo...
 
 ## Paso 5: Commit de los cambios
 
-1. Al terminar de escribir, desplázate hacia abajo
-2. En "Commit new file", escribe una breve descripción de tu artículo
+1. Al terminar de escribir, desplázate hacia arriba
+2. En "Commit changes...", y escribe una breve descripción de tu artículo
 3. Asegúrate de que está seleccionado "Commit directly to the main branch"
 4. Haz clic en "Commit new file"
 
