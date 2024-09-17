@@ -1,6 +1,6 @@
 ---
 title: Oportunidades y Retos en la Economía del Caribe Colombiano ¿Cómo Afectan a los Jóvenes Emprendedores?
-author: Andrés Gutierrez
+author: Andrés Acosta
 image: "images/oportunidades-y-retos-en-la-economia-del-caribe-colombiano-20210930-CafeFiestaLibro (3)-1.jpg"
 description: Este artículo explora cómo áreas como el turismo, la energía renovable y la tecnología están generando potenciales de inversión, mientras que también se enfrentan desafíos como la infraestructura y el acceso a financiamiento.
 date: 5/09/2024
