@@ -6,7 +6,7 @@ toc: true
 index: false
 ---
 # Guía para publicar artículos en Agora
-
+---
 ## Paso 1: Hacer un fork del repositorio
 
 1. Ve a https://github.com/AgoraUninorte/Agora
