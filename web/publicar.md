@@ -5,7 +5,7 @@ title: Publicar en Ágora
 toc: true
 index: false
 ---
-# Guía para publicar artículos en Agora
+# Guía para publicar artículos en Ágora
 ---
 ## Paso 1: Hacer un fork del repositorio
 
