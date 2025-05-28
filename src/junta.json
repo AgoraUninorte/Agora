@@ -1,44 +1,51 @@
 [
     {
-        "id": "daviel-acevedo",
-        "name": "Daniel Acevedo Dumar",
+        "id": "cristian",
+        "name": "Cristian Camilo",
         "title": "Presidente",
-        "description": "",
-        "image": "/images/Daniel.jpg"
-    },
-    {
-        "id": "allison-ramirez",
-        "name": "Allison Ramirez",
-        "title": "Vicepresidenta y Directora de Revista",
-        "description": "",
-        "image": "/images/Allison.jpeg"
-    },
-    {
-        "id": "guillermo-villadiego",
-        "name": "Guillermo Villadiego",
-        "title": "Tesorero",
-        "description": "",
-        "image": "/images/Guillermo.jpg"
-    },
-    {
-        "id": "dana-ramirez",
-        "name": "Dana Ramirez",
-        "title": "Subdirectora Académica",
-        "description": "",
-        "image": "/images/Dana.jpg"
-    },
-    {
-        "id": "cristian-palmera",
-        "name": "Cristian Palmera",
-        "title": "Director de Logistica",
         "description": "",
         "image": "/images/Cristian.jpg"
     },
     {
-        "id": "ana-llinas",
-        "name": "Ana María Llinás",
-        "title": "Directora de Comunicaciones",
+        "id": "juanpi",
+        "name": "Juan Pablo Ovalle",
+        "title": "Vicepresidente",
         "description": "",
-        "image": "/images/Ana.jpg"
+        "image": "/images/Juanpi.jpg"
+    },
+    {
+        "id": "andi",
+        "name": "Andi",
+        "title": "Directora de Logística",
+        "description": "",
+        "image": "/images/Andi.jpg"
+    },
+    {
+        "id": "daniela",
+        "name": "Daniela Santís",
+        "title": "Codirectora de Marketing",
+        "description": "",
+        "image": "/images/Daniela.jpg"
+    },
+    {
+        "id": "shirly",
+        "name": "Shirly Rueda",
+        "title": "Codirectora de Marketing",
+        "description": "",
+        "image": "/images/Shirley.jpg"
+    },
+    {
+        "id": "juanca-pinedo",
+        "name": "Juan Camilo Pinedo",
+        "title": "Codirector de Finanzas",
+        "description": "",
+        "image": "/images/Juanca.jpg"
+    },
+    {
+        "id": "Joshua Barrios",
+        "name": "Joshua",
+        "title": "Codiretor de Finanzas",
+        "description": "",
+        "image": "/images/Joshua.jpg"
     }
 ]
