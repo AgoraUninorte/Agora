@@ -18,5 +18,8 @@
     "rehype-katex": "^7.0.1",
     "remark-math": "^6.0.0",
     "tailwindcss": "^4.1.7"
+  },
+  "engines": {
+    "node": ">=18.20.8"
   }
 }
