@@ -3,7 +3,6 @@ title: Oportunidades y Retos en la Economía del Caribe Colombiano ¿Cómo Afect
 author: Andrés Acosta
 description: Este artículo explora cómo áreas como el turismo, la energía renovable y la tecnología están generando potenciales de inversión, mientras que también se enfrentan desafíos como la infraestructura y el acceso a financiamiento.
 pubDate: 'Sept 09 2024'
-toc: false
 ---
 # Oportunidades y Retos en la Economía del Caribe Colombiano
 ## ¿Cómo Afectan a los Jóvenes Emprendedores?

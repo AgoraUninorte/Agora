@@ -13,7 +13,86 @@ const { title, description, pubDate, updatedDate, image } = Astro.props;
 <html lang="en">
 	<head>
 		<BaseHead title={title} description={description} />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/@waline/client@v3/dist/waline.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css"
+			integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ"
+			crossorigin="anonymous"
+		/>
 		<style>
+			:root {
+				/* Font Size */
+				--waline-font-size: 18px;
+
+				/* Regular color */
+				--waline-white: #fff;
+				--waline-light-grey: #999;
+				--waline-dark-grey: #666;
+
+				/* Theme Color */
+				--waline-theme-color: var(--color-fg);
+				--waline-active-color: var(--color-fg-focus);
+
+				/* Layout Color */
+				--waline-color: #444;
+				--waline-bg-color: var(--color-bg);
+				--waline-bg-color-light: var(--color-bg-alt);
+				--waline-bg-color-hover: var(--color-bg-alt);
+				--waline-border-color: #ddd;
+				--waline-disable-bg-color: #f8f8f8;
+				--waline-disable-color: #bbb;
+				--waline-code-bg-color: #282c34;
+
+				/* Special Color */
+				--waline-bq-color: var(--color-bg-alt);
+
+				/* Avatar */
+				--waline-avatar-size: 3rem;
+				--waline-m-avatar-size: calc(
+					var(--waline-avatar-size) * 9 / 13
+				);
+
+				/* Badge */
+				--waline-badge-color: #3498db;
+				--waline-badge-font-size: 0.775em;
+
+				/* Information */
+				--waline-info-bg-color: #f8f8f8;
+				--waline-info-color: #999;
+				--waline-info-font-size: 0.625em;
+
+				/* Render choice */
+				--waline-border: 1px solid var(--waline-border-color);
+				--waline-avatar-radius: 50%;
+				--waline-box-shadow: none;
+			}
+
+			/* ↓ Based on user settings */
+			.darkmode-selector {
+				/* Regular color */
+				--waline-white: #000;
+				--waline-light-grey: #666;
+				--waline-dark-grey: #999;
+
+				/* Layout color */
+				--waline-color: #888;
+				--waline-bg-color: #1e1e1e;
+				--waline-bg-color-light: #272727;
+				--waline-border-color: #333;
+				--waline-disable-bg-color: #444;
+				--waline-disable-color: #272727;
+
+				/* Special color */
+				--waline-bq-color: #272727;
+
+				/* Other color */
+				--waline-info-bg-color: #272727;
+				--waline-info-color: #666;
+			}
 			main {
 				width: calc(100% - 2em);
 				max-width: 100%;
@@ -51,18 +130,29 @@ const { title, description, pubDate, updatedDate, image } = Astro.props;
 			.last-updated-on {
 				font-style: italic;
 			}
-		</style>
-	</head>
-
-	<body>
-		<Header />
-		<main>
-			<article>
-				<div class="prose">
-					<slot />
-				</div>
-			</article>
-		</main>
-		<Footer />
-	</body>
+		</style></head
+	>
 </html>
+
+<body>
+	<Header />
+	<main>
+		<article>
+			<div class="prose">
+				<slot />
+				<hr />
+				<div id="waline" class="[font-family:var(--serif)]"></div>
+			</div>
+		</article>
+	</main>
+	<Footer />
+</body>
+<script type="module">
+	import { init } from "https://unpkg.com/@waline/client@v3/dist/waline.js";
+
+	init({
+		el: "#waline",
+		serverURL: "https://comments-engine.vercel.app/",
+		lang: "es",
+	});
+</script>

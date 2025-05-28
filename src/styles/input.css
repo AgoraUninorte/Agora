@@ -3,7 +3,18 @@
 /* @import "tailwindcss/preflight.css" layer(base); */
 @import "tailwindcss/utilities.css" layer(utilities);
 
-@config "../../tailwind.config.js";
+@theme {
+    --color-fg: var(--theme-foreground);
+    --color-bg: var(--theme-background);
+    --color-bg-alt: var(--theme-background-alt);
+    --color-fg-alt: var(--theme-foreground-alt);
+    --color-fg-muted: var(--theme-foreground-muted);
+    --color-fg-faint: var(--theme-foreground-faint);
+    --color-fg-fainter: var(--theme-foreground-fainter);
+    --color-fg-faintest: var(--theme-foreground-faintest);
+    --color-fg-focus: var(--theme-foreground-focus);
+}
+
 /* :root {
     --theme-foreground-focus: #38c039;
 } */

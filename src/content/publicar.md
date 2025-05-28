@@ -24,7 +24,7 @@ pubDate: 'Sept 17 2024'
 
 ## Paso 3: Crear un nuevo archivo
 
-1. En tu fork, navega a la carpeta `web`
+1. En tu fork, navega a la carpeta `src/content`
 2. Haz clic en "Add file" y luego en "Create new file"
 3. Nombra tu archivo con el título del artículo en formato "slug" (por ejemplo: "mi-primer-articulo.md")
 
@@ -34,11 +34,10 @@ pubDate: 'Sept 17 2024'
 
 ```yaml
 ---
-pubDate 17/09/2024
+pubDate: "Aug 4 2024"
 author: Tu Nombre (Corto)
-image: images/tuimagen.jpg
+image: https://direccionatuimagen.com/imagen.jpg 
 title: Título de tu artículo
-toc: true
 ---
 ```
 La imagen tambien puede ser una url
