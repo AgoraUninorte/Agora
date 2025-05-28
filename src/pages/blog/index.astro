@@ -1,0 +1,74 @@
+---
+import BaseHead from "../../components/BaseHead.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
+import { getCollection } from "astro:content";
+import FormattedDate from "../../components/FormattedDate.astro";
+import Article from "../../components/Article.astro";
+
+const posts = await getCollection("blog");
+
+const allposts = posts
+	.filter((p) => p.data.index !== false)
+	.sort((a, b) => {
+		return (
+			new Date(b.data.pubDate).getTime() -
+			new Date(a.data.pubDate).getTime()
+		);
+	});
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<div id="observablehq-center" class="mt-4">
+			<Header />
+			<main id="observablehq-main">
+				<h1>Articulos</h1>
+				<!-- <div class="mt-6">
+					<input
+						id="search"
+						type="text"
+						placeholder="Buscar artículos ..."
+						class="rounded
+							text-pretty focus:outline-none focus:border-b-2 [font-family:var(--serif)] p-0 text-3xl border-none italic transition-colors duration-200 bg-transparent"
+						oninput=""
+					/>
+				</div> -->
+				<section>
+					<div
+						class="grid grid-cols-1 !gap-10 lg:grid-cols-2 lg:!gap-x-12 lg:!gap-y-16 auto-rows-min"
+					>
+						{
+							allposts
+								.slice(1, allposts.length)
+								.map((post) => (
+									<Article
+										title={post.data.title}
+										description={post.data.description}
+										image={
+											post.data.image ||
+											"/blog-placeholder-1.jpg"
+										}
+										url={`/blog/${post.id}`}
+										pubDate={post.data.pubDate}
+										author={
+											post.data.author ||
+											"Grupo Ágora Uninorte"
+										}
+										category={post.data.category}
+									/>
+								))
+						}
+					</div>
+				</section>
+			</main>
+		</div>
+
+		<Footer />
+	</body>
+</html>

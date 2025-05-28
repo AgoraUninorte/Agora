@@ -1,30 +1,19 @@
 {
+  "name": "astro",
   "type": "module",
-  "private": true,
+  "version": "0.0.1",
   "scripts": {
-    "clean": "rimraf web/.observablehq/cache web/tailwind.css dist",
-    "build": "rimraf dist && bun styles:build && observable build && bun move",
-    "styles": "bunx tailwindcss -i ./web/styles/input.css -o ./web/styles/tailwind.css --watch",
-    "styles:build": "bunx tailwindcss -i ./web/styles/input.css -o ./web/styles/tailwind.css",
-    "move": "cp public/* dist && bun moveImages.js",
-    "preview": "observable preview",
-    "dev": "concurrently --kill-others \"bun styles\" \"bun preview --port 3445\"",
-    "observable": "observable",
-    "deploy": "observable deploy"
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "dependencies": {
-    "@observablehq/framework": "^1.7.1"
-  },
-  "devDependencies": {
-    "@nolebase/markdown-it-bi-directional-links": "^2.4.0",
-    "markdown-it-wikilinks": "^1.4.0",
-    "markdown-it-footnote": "^4.0.0",
-    "concurrently": "^8.2.2",
-    "tailwindcss": "^3.4.3",
-    "rimraf": "^5.0.5",
-    "rss": "^1.2.2"
-  },
-  "engines": {
-    "node": ">=18"
+    "@astrojs/mdx": "^4.3.0",
+    "@astrojs/rss": "^4.0.11",
+    "@astrojs/sitemap": "^3.4.0",
+    "@tailwindcss/vite": "^4.1.7",
+    "astro": "^5.8.0",
+    "tailwindcss": "^4.1.7"
   }
 }

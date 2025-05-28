@@ -1,0 +1,44 @@
+[
+    {
+        "id": "daviel-acevedo",
+        "name": "Daniel Acevedo Dumar",
+        "title": "Presidente",
+        "description": "",
+        "image": "/images/Daniel.jpg"
+    },
+    {
+        "id": "allison-ramirez",
+        "name": "Allison Ramirez",
+        "title": "Vicepresidenta y Directora de Revista",
+        "description": "",
+        "image": "/images/Allison.jpeg"
+    },
+    {
+        "id": "guillermo-villadiego",
+        "name": "Guillermo Villadiego",
+        "title": "Tesorero",
+        "description": "",
+        "image": "/images/Guillermo.jpg"
+    },
+    {
+        "id": "dana-ramirez",
+        "name": "Dana Ramirez",
+        "title": "Subdirectora Académica",
+        "description": "",
+        "image": "/images/Dana.jpg"
+    },
+    {
+        "id": "cristian-palmera",
+        "name": "Cristian Palmera",
+        "title": "Director de Logistica",
+        "description": "",
+        "image": "/images/Cristian.jpg"
+    },
+    {
+        "id": "ana-llinas",
+        "name": "Ana María Llinás",
+        "title": "Directora de Comunicaciones",
+        "description": "",
+        "image": "/images/Ana.jpg"
+    }
+]

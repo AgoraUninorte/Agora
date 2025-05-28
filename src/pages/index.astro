@@ -1,0 +1,133 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import Article from "../components/Article.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import { getCollection, getEntry } from "astro:content";
+// import "../styles/index.css";
+// Get all entries from a collection.
+// Requires the name of the collection as an argument.
+const posts = await getCollection("blog");
+const members = await getCollection("juntaDirectiva");
+const revistas = await getCollection("revistas");
+
+const allposts = posts
+	.filter((p) => p.data.index !== false)
+	.sort((a, b) => {
+		return (
+			new Date(b.data.pubDate).getTime() -
+			new Date(a.data.pubDate).getTime()
+		);
+	});
+
+const lastArticle = allposts[0];
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<div id="observablehq-center" class="mt-4">
+			<Header />
+
+			<main id="obsevablehq-main" class="mt-4">
+				<!-- Hero Article Component -->
+				<div
+					id="Hero"
+					class="flex flex-col -mt-4 text-center gap-y-4 sm:gap-y-0 md:justify-between md:flex-row md:text-left"
+				>
+					<a
+						href={`${Astro.url}/blog/${lastArticle.id}`}
+						class="w-full md:order-2 md:max-w-[30vw] lg:max-w-[40vw]"
+					>
+						<img
+							src={lastArticle.data.image}
+							class="w-full h-[50svh] md:max-h-[70svh] object-cover object-center"
+							alt=""
+						/>
+					</a>
+					<div class="px-2 my-auto sm:px-0">
+						<a href={"/blog/" + lastArticle.id}>
+							<h1
+								class="mt-0 !leading-[60px] lg:text-6xl text-4xl md:text-5xl text-pretty !text-fg-focus font-bold"
+							>
+								{lastArticle.data.title}
+							</h1>
+						</a>
+						<p class="text-balance">
+							{lastArticle.data.description}
+						</p>
+						<p class="italic text-fg-muted">
+							Por {lastArticle.data.author}
+						</p>
+					</div>
+				</div>
+				<!-- Articulos -->
+				<h2 class="w-full pl-2">Articulos</h2>
+				<div
+					class="grid grid-cols-1 !gap-10 lg:grid-cols-2 lg:!gap-x-12 lg:!gap-y-16 auto-rows-min"
+				>
+					{
+						allposts
+							.slice(1, 7)
+							.map((post) => (
+								<Article
+									title={post.data.title}
+									description={post.data.description}
+									image={
+										post.data.image ||
+										"/blog-placeholder-1.jpg"
+									}
+									url={`/blog/${post.id}`}
+									pubDate={post.data.pubDate}
+									author={
+										post.data.author ||
+										"Grupo Ágora Uninorte"
+									}
+									category={post.data.category}
+								/>
+							))
+					}
+				</div>
+				<!-- Junta Directiva -->
+				<h2 class="w-full pl-2">Junta Directiva</h2>
+				<div
+					class="grid !grid-cols-2 !gap-x-10 sm:!grid-cols-3 lg:!grid-cols-5 lg:!gap-x-12 lg:!gap-y-8"
+				>
+					{
+						members.map((member, id) => (
+							<article class="w-full text-center group hover:bg-bg-alt hover:shadow-xl ">
+								<img
+									src={member.data.image}
+									class="w-[inherit] group-hover:saturate-200 transition-all group-hover:scale-95 ease-out duration-700"
+								/>
+								<h3 class="group-hover:text-fg-focus">
+									{member.data.name}
+								</h3>
+								<b>{member.data.title}</b>
+								<p>{member.data.description}</p>
+							</article>
+						))
+					}
+				</div>
+				<!-- Revistas -->
+				<h2 class="w-full pl-2">Revistas</h2>
+				<div
+					class="grid grid-cols-6 sm:grid-cols-9 md:grid-cols-[repeat(13,_minmax(0,_1fr))]"
+				>
+					{
+						revistas.map((revista) => (
+							<a href={revista.data.Link || ""} class="w-full">
+								<img src={revista.data.image} class="w-full" />
+							</a>
+						))
+					}
+				</div>
+			</main>
+		</div>
+		<Footer />
+	</body>
+</html>

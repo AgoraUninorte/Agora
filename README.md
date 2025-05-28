@@ -1,66 +1,68 @@
-# Agora
+# Astro Starter Kit: Blog
 
-Este es el repositorio de la página web oficial del Grupo Estudiantil Ágora. Donde nos reunimos los estudiantes apasionados por entender los flujos de la economía.
-
-En este repositorio encontraran el código que construye el sitio junto con los artículos. El sitio esta hecho con [Observable Framework](https://observablehq.com/framework). Si estas desarrollando _google idx_ el servidor de desarrollo se iniciara automáticamente, si estas un entorno de desarrollo local corre:
-
-```
-bun dev
+```sh
+bun create astro@latest -- --template blog
 ```
 
-Luego visita <http://localhost:3000> para ver el proyecto.
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/blog)
+[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/blog)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/blog/devcontainer.json)
 
-Puedes acceder al entorno de desarrollo online aqui <https://idx.google.com/agora-1875329>
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
+![blog](https://github.com/withastro/astro/assets/2244813/ff10799f-a816-4703-b967-c78997e8323d)
 
-Asegurate de undir el circulo ![alt text](image.png) antes de escribir para actualizar los cambios con el servidor principal.
+Features:
 
-## Estructura del Proyecto
-Los nuevos articulos se deben crear en la carpeta `web` y las imagenes de esos articulos en la carpeta `web/images`, esas imagenes se deben referenciar en los articulos usando la nomenclatura de markdown `![](/images/agorabanner.jpg)`.
+- ✅ Minimal styling (make it your own!)
+- ✅ 100/100 Lighthouse performance
+- ✅ SEO-friendly with canonical URLs and OpenGraph data
+- ✅ Sitemap support
+- ✅ RSS Feed support
+- ✅ Markdown & MDX support
 
-```ini
-.
-├─ web
-│  ├─ components
-│  │  └─ timeline.js           # an importable module
-│  ├─ data
-│  │  ├─ launches.csv.js       # a data loader
-│  │  └─ events.json           # a static data file
-│  ├─ images
-│  │  ├─ agorabanner.jpg     # a data loader
-│  ├─ input.css     # Global css styles
-│  ├─ tailwind.css   # Builded and bundled global css styles
-│  ├─ article.md        # An Article
-│  ├─ sobre-nosotros.md        # about page
-│  ├─ contactanos.md        # contact page
-│  ├─ blog.md        # all articles page
-│  └─ index.md                 # the home page
-├─ observablehq.config.js      # the project config file
-├─ tailwind.config.js      # Tailwindcss configuration File
-├─ moveImages.js      # Script for moving images to the end route
-├─ package.json
-└─ README.md
+## 🚀 Project Structure
+
+Inside of your Astro project, you'll see the following folders and files:
+
+```text
+├── public/
+├── src/
+│   ├── components/
+│   ├── content/
+│   ├── layouts/
+│   └── pages/
+├── astro.config.mjs
+├── README.md
+├── package.json
+└── tsconfig.json
 ```
 
-**`web`** - This is the “source root” — where your source files live. Pages go here. Each page is a Markdown file. Observable Framework uses [file-based routing](https://observablehq.com/framework/routing), which means that the name of the file controls where the page is served. You can create as many pages as you like. Use folders to organize your pages.
+Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
-**`web/index.md`** - This is the home page for your site. You can have as many additional pages as you’d like, but you should always have a home page, too.
+There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
 
-**`web/data`** - You can put [data loaders](https://observablehq.com/framework/loaders) or static data files anywhere in your source root, but we recommend putting them here.
+The `src/content/` directory contains "collections" of related Markdown and MDX documents. Use `getCollection()` to retrieve posts from `src/content/blog/`, and type-check your frontmatter using an optional schema. See [Astro's Content Collections docs](https://docs.astro.build/en/guides/content-collections/) to learn more.
 
-**`web/components`** - You can put shared [JavaScript modules](https://observablehq.com/framework/javascript/imports) anywhere in your source root, but we recommend putting them here. This helps you pull code out of Markdown files and into JavaScript modules, making it easier to reuse code across pages, write tests and run linters, and even share code with vanilla web applications.
+Any static assets, like images, can be placed in the `public/` directory.
 
-**`observablehq.config.js`** - This is the [project configuration](https://observablehq.com/framework/config) file, such as the pages and sections in the sidebar navigation, and the project’s title.
+## 🧞 Commands
 
-## Command reference
+All commands are run from the root of the project, from a terminal:
 
-| Command           | Description                                              |
-| ----------------- | -------------------------------------------------------- |
-| `bun install`            | Install or reinstall dependencies                        |
-| `bun dev`        | Start local preview server                               |
-| `bun run build`      | Build your static site, generating `./dist`              |
-| `bun run deploy`     | Deploy your project to Observable                        |
-| `bun clean`      | Clear the local data loader cache                        |
-| `bun styles`      | Run the styles on development mode                      |
-| `bun styles:build`      | Build the css styles                    |
-| `bun observable` | Run commands like `observable help`                      |
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `bun install`             | Installs dependencies                            |
+| `bun dev`             | Starts local dev server at `localhost:4321`      |
+| `bun build`           | Build your production site to `./dist/`          |
+| `bun preview`         | Preview your build locally, before deploying     |
+| `bun astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `bun astro -- --help` | Get help using the Astro CLI                     |
+
+## 👀 Want to learn more?
+
+Check out [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+## Credit
+
+This theme is based off of the lovely [Bear Blog](https://github.com/HermanMartinus/bearblog/).

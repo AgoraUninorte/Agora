@@ -1,0 +1,155 @@
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+/* @import "tailwindcss/preflight.css" layer(base); */
+@import "tailwindcss/utilities.css" layer(utilities);
+
+@config "../../tailwind.config.js";
+/* :root {
+    --theme-foreground-focus: #38c039;
+} */
+
+.arturo2 {
+    @apply text-3xl text-indigo-400;
+}
+
+body {
+    @apply border-solid border-y-2 border-x-0 border-t-fg-focus;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+h2 {
+    @apply text-2xl font-bold;
+}
+
+h3 {
+    @apply text-xl font-bold;
+}
+
+h4 {
+    @apply text-lg font-bold;
+}
+
+h5 {
+    @apply text-base font-bold;
+}
+
+h6 {
+    @apply text-sm font-bold;
+}
+
+
+/* #observablehq-center {
+    @apply mx-2 mt-0;
+} */
+
+button {
+    @apply inline-block px-4 py-2 text-sm font-medium leading-5 transition-colors duration-150 border shadow-sm border-bg-alt text-fg-focus focus:outline-none focus:shadow-fg-fainter hover:bg-fg-focus;
+}
+
+#observablehq-header {
+    background-image: radial-gradient(rgba(0, 0, 0, 0) 1px, var(--theme-background) 1px);
+    background-size: 4px 4px;
+    backdrop-filter: brightness(100%) blur(3px);
+    @apply w-full pt-6 pb-6 my-0;
+}
+
+@media (min-width: 640px) {
+    .my-container {
+        max-width: 640px;
+    }
+}
+
+@media (min-width: 768px) {
+    .my-container {
+        max-width: calc(640 - 2rem);
+    }
+}
+
+@media (min-width: 1024px) {
+    .my-container {
+        max-width: calc(768px - 2rem);
+    }
+}
+
+@media (min-width: 1280px) {
+    .my-container {
+        max-width: calc(1024px - 2rem);
+    }
+}
+
+@media (min-width: 1536px) {
+    .my-container {
+        max-width: calc(1280px - 2rem);
+    }
+}
+
+.logo-text {
+    @apply text-neutral-950 dark:text-white;
+}
+
+/* Define the animation */
+@keyframes rotateTwice {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(720deg);
+        /* 2 full rotations */
+    }
+}
+
+/* Apply the animation on hover */
+#logo:hover .rotating-group {
+    animation: rotateTwice 2s ease-in-out forwards;
+    transform-origin: center center;
+    /* Adjust the origin point of rotation */
+}
+
+#observablehq-center>main {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#observablehq-center>main {
+    width: 100%;
+}
+
+#observablehq-header>nav>a,
+#observablehq-footer {
+    margin-left: 0.5rem;
+}
+
+#observablehq-header>nav>div,
+#observablehq-footer {
+    margin-right: 0.5rem;
+}
+
+@media (min-width: 640px) {
+
+    #observablehq-center>main,
+    footer,
+    nav {
+        max-width: 85vw;
+    }
+
+    #observablehq-header>nav>a,
+    #observablehq-footer {
+        margin-left: 0;
+    }
+
+    #observablehq-header>nav>div,
+    #observablehq-footer {
+        margin-right: 0;
+    }
+}
+
+
+#observablehq-center {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}

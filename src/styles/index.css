@@ -1,0 +1,43 @@
+#observablehq-center>main {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#observablehq-center>main {
+    width: 100%;
+}
+
+#observablehq-header>nav>a,
+#observablehq-footer {
+    margin-left: 0.5rem;
+}
+
+#observablehq-header>nav>div,
+#observablehq-footer {
+    margin-right: 0.5rem;
+}
+
+@media (min-width: 640px) {
+
+    #observablehq-center>main,
+    footer,
+    nav {
+        max-width: 85vw;
+    }
+
+    #observablehq-header>nav>a,
+    #observablehq-footer {
+        margin-left: 0;
+    }
+
+    #observablehq-header>nav>div,
+    #observablehq-footer {
+        margin-right: 0;
+    }
+}
+
+
+#observablehq-center {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}

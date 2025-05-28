@@ -1,0 +1,45 @@
+---
+import { getCollection } from "astro:content";
+import MainLayout from "../layouts/MainLayout.astro";
+
+const members = await getCollection("juntaDirectiva");
+---
+
+<MainLayout>
+    <h1>Quienes somos?</h1>
+    <p>
+        Somos un grupo que busca fomentar y difundir ampliamente el debate y el
+        pensamiento crítico acerca de los fenómenos políticos, económicos y
+        sociales que se presentan en Colombia, la región y el mundo, mediante
+        cualquier medio creativo e innovador que esté a disposición de la
+        organización. En especial, potenciar las habilidades escritas de los
+        estudiantes. Nuestro propósito es crear espacios que fomenten la
+        construcción de propuestas activas en pro de la formación académico y su
+        impacto social. Por ello, los miembros de este equipo nos esforzamos por
+        convocar a estudiantes, profesores, directivas y expertos a eventos
+        diversos, entorno a temáticas sociales y económicas vistas desde
+        distintas perspectivas abriendo espacio a la opinión y debate.
+    </p>
+
+    <!-- Junta Directiva -->
+    <h2 class="w-full pl-2">Junta Directiva 2025</h2>
+    <div
+        class="grid !grid-cols-2 !gap-x-10 sm:!grid-cols-3 lg:!grid-cols-5 lg:!gap-x-12 lg:!gap-y-8"
+    >
+        {
+            members.map((member, id) => (
+                <article class="w-full text-center group hover:bg-bg-alt hover:shadow-xl ">
+                    <img
+                        src={member.data.image}
+                        class="w-[inherit] group-hover:saturate-200 transition-all group-hover:scale-95 ease-out duration-700"
+                    />
+                    <h3 class="group-hover:text-fg-focus">
+                        {member.data.name}
+                    </h3>
+                    <b>{member.data.title}</b>
+                    <p>{member.data.description}</p>
+                </article>
+            ))
+        }
+    </div>
+</MainLayout>
