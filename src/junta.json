@@ -1,10 +1,10 @@
 [
     {
         "id": "cristian",
-        "name": "Cristian Camilo",
+        "name": "Cristian Palmera",
         "title": "Presidente",
         "description": "",
-        "image": "/images/Cristian.jpg"
+        "image": "/images/Cristian copy.jpg"
     },
     {
         "id": "juanpi",
@@ -42,8 +42,8 @@
         "image": "/images/Juanca.jpg"
     },
     {
-        "id": "Joshua Barrios",
-        "name": "Joshua",
+        "id": "joshua",
+        "name": "Joshua Barrios",
         "title": "Codiretor de Finanzas",
         "description": "",
         "image": "/images/Joshua.jpg"
