@@ -1,20 +1,34 @@
 media:
-  input: src/media
-  output: /media
+  input: public/images
+  output: /images
 content:
-  - name: posts
-    label: Posts
+  - name: blog
+    label: Articulos
     type: collection
-    path: 'src/posts'
+    path: 'src/content'
     view:
-      fields: [ title, published, date ]
+      fields: [ title, index, pubDate, author, image, category, description ]
     fields:
-      - name: published
-        label: Published
+      - name: description
+        label: Descripción
+        type: text
+      - name: category
+        label: Categoría
+        type: select
+        options:
+          multiple: true
+          values: ["ECONOMÍA"]
+      - name: author
+        label: Autor
+        type: string
+      - name: index
+        label: Indexado
         type: boolean
-        default: true
-      - name: date
-        label: Date
+      - name: image
+        label: Imagen Principal
+        type: image
+      - name: pubDate
+        label: Fecha
         type: date
       - name: title
         label: Title
@@ -22,9 +36,53 @@ content:
       - name: body
         label: Body
         type: rich-text
+  - name: juntaDirectiva
+    type: collection
+    label: Junta Directiva
+    path: src/junta
+    view:
+      fields: [name, title, description, image]
+    fields:
+      - name: name
+        type: string
+        label: Nombre
+      - name: description
+        label: Descripción
+        type: text
+      - name: image
+        type: image
+        label: Imagen
+      - name: title
+        type: string
+        label: Titulo
+      - name: body
+        label: body
+        type: rich-text
+  - name: revistas
+    type: collection
+    label: Revistas
+    path: src/revistas
+    view:
+      fields: [link, image]
+    fields:
+      - name: year
+        label: Año
+        type: number
+      - name: link
+        label: Enlace
+        type: string
+      - name: image
+        type: image
+        label: Imagen
+      - name: body
+        label: body
+        type: rich-text
+      - name: file
+        label: PDF
+        type: file
   - name: site
     label: Site settings
-    path: src/_data/site.json
+    path: src/configsite.json
     type: file
     fields:
       - name: title
@@ -37,7 +95,6 @@ content:
       - name: url
         label: Website URL
         type: string
-        pattern: ^(https?:\/\/)?(www\.)?[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(\/[^\s]*)?$
       - name: cover
         label: Preview image
         type: image
