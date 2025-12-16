@@ -14,10 +14,7 @@ content:
         type: text
       - name: category
         label: Categoría
-        type: select
-        options:
-          multiple: true
-          values: ["ECONOMÍA"]
+        type: string
       - name: author
         label: Autor
         type: string
