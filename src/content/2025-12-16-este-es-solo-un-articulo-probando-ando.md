@@ -1,7 +1,5 @@
 ---
 description: Articulo de prueba
-category:
-  - ECONOMÍA
 author: Arturo Ozimandias
 index: true
 image: /images/agora-edicion-6.png
